@@ -1,1 +1,1 @@
-WAV snd_intro "sfx/intro.wav" PCM 11025
+WAV snd_intro "sfx/intro.wav" DPCM2

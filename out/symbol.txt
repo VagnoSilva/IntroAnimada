@@ -1,10 +1,11 @@
 00000000 A __DYNAMIC
-00000000 t _Start_Of_Rom	C:/SGDK/src/bmp.c:1405
-00000000 t _Vecteurs_68K	C:/SGDK/src/bmp.c:1405
+00000000 t _Start_Of_Rom
+00000000 t _Vecteurs_68K
 0000000e a frame118_tilemap_data_size
 00000020 a font_pal_default_data_size
 00000020 a frame118_tileset_data_size
 00000020 a sgdk_logo_palette_data_size
+00000044 A _sdata
 00000080 a frame1_palette_data_size
 00000080 a frame104_palette_data_size
 00000080 a frame106_palette_data_size
@@ -138,7 +139,7 @@
 000000fa a frame79_tilemap_data_size
 000000fc a frame72_tilemap_data_size
 00000100 a frame106_tilemap_data_size
-00000100 T rom_header	C:/SGDK/src/bmp.c:1468
+00000100 T rom_header
 00000102 a frame137_tilemap_data_size
 00000102 a frame58_tilemap_data_size
 00000104 a frame73_tilemap_data_size
@@ -185,151 +186,400 @@
 0000019a a frame156_tilemap_data_size
 000001ba a frame169_tilemap_data_size
 000001d8 a frame168_tilemap_data_size
-00000200 t _Entry_Point	C:/SGDK/src/bmp.c:1469
-0000023c t NoTMSS	C:/SGDK/src/bmp.c:1469
-00000242 t SkipInit	C:/SGDK/src/bmp.c:1469
-00000248 t _INT	C:/SGDK/src/bmp.c:1469
-0000025a t _EXTINT	C:/SGDK/src/bmp.c:1469
+00000200 t _Entry_Point
+0000023c t NoTMSS
+00000242 t SkipInit
+00000248 t _INT
+0000025a t _EXTINT
 00000262 a font_default_data_size
-0000026c t _VINT	C:/SGDK/src/bmp.c:1469
-0000028e t unlock	C:/SGDK/src/bmp.c:1469
+0000026c t _VINT
+0000028e t unlock
 00000292 a frame164_tilemap_data_size
 000002a8 a frame1_tilemap_data_size
-000002b0 t no_user_task	C:/SGDK/src/bmp.c:1470
-000002d2 t no_xgm_task	C:/SGDK/src/bmp.c:1470
-000002e2 t no_bmp_task	C:/SGDK/src/bmp.c:1470
-000002f8 t ldiv	C:/SGDK/src/bmp.c:1470
-00000302 t ld1	C:/SGDK/src/bmp.c:1470
-0000030e A _sdata
-00000312 t ld2	C:/SGDK/src/bmp.c:1470
-00000320 t ld3	C:/SGDK/src/bmp.c:1470
-00000322 t lmul	C:/SGDK/src/bmp.c:1470
-0000032c t lm1	C:/SGDK/src/bmp.c:1470
-0000033c t lm2	C:/SGDK/src/bmp.c:1470
-0000034a t lm3	C:/SGDK/src/bmp.c:1470
-0000034c t lrem	C:/SGDK/src/bmp.c:1470
-00000356 t lr1	C:/SGDK/src/bmp.c:1470
-00000360 t lr2	C:/SGDK/src/bmp.c:1470
-00000370 t lr3	C:/SGDK/src/bmp.c:1470
-00000372 t ldivu	C:/SGDK/src/bmp.c:1470
-00000380 t lmulu	C:/SGDK/src/bmp.c:1470
-0000038e t lremu	C:/SGDK/src/bmp.c:1470
-0000039e t i_lmul	C:/SGDK/src/bmp.c:1470
-000003ba t i_ldiv	C:/SGDK/src/bmp.c:1471
-000003ca t nz1	C:/SGDK/src/bmp.c:1471
-000003de t is1	C:/SGDK/src/bmp.c:1471
-000003e6 t norm	C:/SGDK/src/bmp.c:1471
-000003f6 t not1	C:/SGDK/src/bmp.c:1471
+000002b0 t no_user_task
+000002d2 t no_xgm_task
+000002e2 t no_bmp_task
+000002f8 t ldiv
+00000302 t ld1
+00000312 t ld2
+00000320 t ld3
+00000322 t lmul
+0000032c t lm1
+0000033c t lm2
+0000034a t lm3
+0000034c t lrem
+00000356 t lr1
+00000360 t lr2
+00000370 t lr3
+00000372 t ldivu
+00000380 t lmulu
+0000038e t lremu
+0000039e t i_lmul
+000003ba t i_ldiv
+000003ca t nz1
+000003de t is1
+000003e6 t norm
+000003f6 t not1
 000003f8 a frame76_tileset_data_size
-00000410 t slow	C:/SGDK/src/bmp.c:1471
+00000410 t slow
 0000043a a sgdk_logo_data_size
-0000043c t slower	C:/SGDK/src/bmp.c:1471
-00000440 t moreadj	C:/SGDK/src/bmp.c:1471
-0000044e t adj	C:/SGDK/src/bmp.c:1471
-00000458 t ltuns	C:/SGDK/src/bmp.c:1471
-00000468 T AnimateMovie	C:\Users\Vagno\Desktop\IntroAnimada-main/src/main.c:42
-00000550 T main	C:\Users\Vagno\Desktop\IntroAnimada-main/src/main.c:75
-000005a2 T TSK_init
-000005c8 t .loop
-000005d0 T TSK_superPost
-000005e6 t no_task
-000005e8 T TSK_userYield
-000005f0 t userYield
-0000061a T _trap_0
-0000063e T BMP_doVBlankProcess	C:/SGDK/src/bmp.c:1214
-00000648 T DMA_setMaxTransferSize	C:/SGDK/src/dma.c:135
-00000658 T DMA_setMaxTransferSizeToDefault	C:/SGDK/src/dma.c:141
-0000067c T DMA_clearQueue	C:/SGDK/src/dma.c:183
-0000069a T DMA_setBufferSize	C:/SGDK/src/dma.c:151
-000006f4 T DMA_setBufferSizeToDefault	C:/SGDK/src/dma.c:167
-00000708 T DMA_initEx	C:/SGDK/src/dma.c:52
-000007b8 T DMA_init	C:/SGDK/src/dma.c:47
-000007ce T DMA_flushQueue	C:/SGDK/src/dma.c:194
+0000043c t slower
+00000440 t moreadj
+0000044e t adj
+00000458 t ltuns
+00000468 T TSK_init
+0000048e t .loop
+00000496 T TSK_superPost
+000004ac t no_task
+000004ae T TSK_userYield
+000004b6 t userYield
+000004e0 T _trap_0
+00000504 T flushQueue
+00000518 t .fq_loop
+00000526 t .fq_end
+00000528 T KDebug_Alert
+00000544 T memset_
+000005bc T memsetU16
+0000061a T memcpy_
+000006be T SYS_setInterruptMaskLevel
+000006d6 T SYS_getAndSetInterruptMaskLevel
+000006f0 T aplib_unpack
+000006f6 t aplib_decrunch
+0000070a t .copy_byte
+0000070c t .next_sequence_init
+0000070e t .next_sequence
+0000071e t .get_3_bits
+0000072e t .write_byte
+00000732 t .short_match
+00000740 t .code_pair
+0000074c t .normal_code_pair
+0000075a t .compare_1280
+0000075e t .compare_128
+00000762 t .domatch_with_2inc
+00000764 t .domatch_with_inc
+00000766 t .domatch_new_lastpos
+00000768 t .copy_code_pair
+0000076e t .loop_do_copy
+00000778 t .get_bit
+00000780 t .still_bits_left
+00000782 t .decode_gamma
+00000784 t .get_more_gamma
+0000078e t .end_decrunch
+00000798 T lz4w_unpack
+0000079e t lz4w_unpack_a
+000007b8 t .jump_table
 000007f8 a frame177_tileset_data_size
-00000842 T DMA_releaseTemp	C:/SGDK/src/dma.c:368
-00000852 T DMA_allocateTemp	C:/SGDK/src/dma.c:346
-000008be T DMA_queueDmaFast	C:/SGDK/src/dma.c:454
 000009ec a frame169_tileset_data_size
-00000a02 T DMA_allocateAndQueueDma	C:/SGDK/src/dma.c:382
-00000a5e T DMA_copyAndQueueDma	C:/SGDK/src/dma.c:406
-00000ad2 T DMA_queueDma	C:/SGDK/src/dma.c:432
 00000b0e a frame119_tileset_data_size
-00000b5c T DMA_doDmaFast	C:/SGDK/src/dma.c:566
-00000c60 T DMA_doDma	C:/SGDK/src/dma.c:545
 00000ca2 a frame145_tileset_data_size
-00000ce4 T DMA_doCPUCopyDirect	C:/SGDK/src/dma.c:663
-00000d90 T DMA_doCPUCopy	C:/SGDK/src/dma.c:640
-00000e04 T DMA_transfer	C:/SGDK/src/dma.c:322
-00000ed0 T DMA_doVRamFill	C:/SGDK/src/dma.c:704
+00000cb6 t .lmr_len_01
+00000dca t .lmr_len_00
 00000f0e a frame153_tileset_data_size
-00000f74 T mulu	C:/SGDK/src/maths.c:76
 00000f7e a frame60_tileset_data_size
-00000f8e T divu	C:/SGDK/src/maths.c:106
-00000f9a T divs	C:/SGDK/src/maths.c:116
 00000fa4 a frame109_tileset_data_size
-00000fa6 T F16_toInt	C:/SGDK/src/maths.c:286
-00000fae T MEM_init	C:/SGDK/src/memory.c:155
-00000fd6 T MEM_getFree	C:/SGDK/src/memory.c:186
-00001002 T MEM_getLargestFreeBlock	C:/SGDK/src/memory.c:208
-00001038 T MEM_alloc	C:/SGDK/src/memory.c:259
+00000fdc t .lm_len_00
+00000fe2 t .next
+00000ff2 t .litE_mat0
+00000ff4 t .litC_mat0
+00000ff6 t .litA_mat0
+00000ff8 t .lit8_mat0
+00000ffa t .lit6_mat0
+00000ffc t .lit4_mat0
+00000ffe t .lit2_mat0
+00001004 t .long_match_1
+00001016 t .litF_mat0
+00001018 t .litD_mat0
+0000101a t .litB_mat0
+0000101c t .lit9_mat0
+0000101e t .lit7_mat0
+00001020 t .lit5_mat0
+00001022 t .lit3_mat0
+00001024 t .lit1_mat0
+0000102a t .long_match_2
+0000103c t .lit0_mat0
+00001040 t .long_match_3
 00001046 a frame108_tileset_data_size
+00001052 t .lm_rom
+0000105e t .done
+00001064 t .no_byte
+0000106e t .lmr_jump_table
 000010aa a frame111_tileset_data_size
 000010b2 a frame112_tileset_data_size
-0000117c T MEM_free	C:/SGDK/src/memory.c:386
-000011ac T MEM_pack	C:/SGDK/src/memory.c:409
-0000121c T memset	C:/SGDK/src/memory.c:694
-0000123c T memcpy	C:/SGDK/src/memory.c:701
-00001258 T PAL_getColors	C:/SGDK/src/pal.c:213
 0000125e a frame155_tileset_data_size
 0000127a a frame110_tileset_data_size
-00001348 T PAL_setColors	C:/SGDK/src/pal.c:274
 00001366 a frame143_tileset_data_size
-00001376 T PAL_setPaletteColors	C:/SGDK/src/pal.c:279
-0000139c T PAL_setPalette	C:/SGDK/src/pal.c:284
 000013ba a frame140_tileset_data_size
-000013be T PAL_initFade	C:/SGDK/src/pal.c:290
 000013d6 a frame154_tileset_data_size
 000013ec a frame144_tileset_data_size
 000013ec a frame83_tileset_data_size
+0000146e t .litE_mat1
+00001470 t .litC_mat1
+00001472 t .litA_mat1
+00001474 t .lit8_mat1
+00001476 t .lit6_mat1
+00001478 t .lit4_mat1
+0000147a t .lit2_mat1
+0000147c t .lit0_mat1
+0000149a t .litF_mat1
+0000149c t .litD_mat1
+0000149e t .litB_mat1
+000014a0 t .lit9_mat1
+000014a2 t .lit7_mat1
+000014a4 t .lit5_mat1
+000014a6 t .lit3_mat1
+000014a8 t .lit1_mat1
 000014a8 a frame141_tileset_data_size
+000014c8 t .litE_mat2
+000014ca t .litC_mat2
+000014cc t .litA_mat2
+000014ce t .lit8_mat2
+000014d0 t .lit6_mat2
+000014d2 t .lit4_mat2
+000014d4 t .lit2_mat2
+000014d6 t .lit0_mat2
 000014e8 a frame80_tileset_data_size
+000014f6 t .litF_mat2
+000014f8 t .litD_mat2
+000014fa t .litB_mat2
+000014fc t .lit9_mat2
+000014fe t .lit7_mat2
+00001500 t .lit5_mat2
+00001502 t .lit3_mat2
+00001504 t .lit1_mat2
 0000151e a frame142_tileset_data_size
 00001520 a frame146_tileset_data_size
 00001520 a frame82_tileset_data_size
-00001546 T PAL_doFadeStep	C:/SGDK/src/pal.c:342
+00001526 t .litE_mat3
+00001528 t .litC_mat3
+0000152a t .litA_mat3
+0000152c t .lit8_mat3
+0000152e t .lit6_mat3
+00001530 t .lit4_mat3
+00001532 t .lit2_mat3
+00001534 t .lit0_mat3
+00001556 t .litF_mat3
+00001558 t .litD_mat3
+0000155a t .litB_mat3
+0000155c t .lit9_mat3
+0000155e t .lit7_mat3
+00001560 t .lit5_mat3
+00001562 t .lit3_mat3
+00001564 t .lit1_mat3
+00001588 t .litE_mat4
+0000158a t .litC_mat4
+0000158c t .litA_mat4
+0000158e t .lit8_mat4
+00001590 t .lit6_mat4
+00001592 t .lit4_mat4
+00001594 t .lit2_mat4
+00001596 t .lit0_mat4
 000015b2 a frame81_tileset_data_size
-00001606 T PAL_fade	C:/SGDK/src/pal.c:389
+000015ba t .litF_mat4
+000015bc t .litD_mat4
+000015be t .litB_mat4
+000015c0 t .lit9_mat4
+000015c2 t .lit7_mat4
+000015c4 t .lit5_mat4
+000015c6 t .lit3_mat4
+000015c8 t .lit1_mat4
+000015ee t .litE_mat5
+000015f0 t .litC_mat5
+000015f2 t .litA_mat5
+000015f4 t .lit8_mat5
+000015f6 t .lit6_mat5
+000015f8 t .lit4_mat5
+000015fa t .lit2_mat5
+000015fc t .lit0_mat5
+00001622 t .litF_mat5
+00001624 t .litD_mat5
+00001626 t .litB_mat5
+00001628 t .lit9_mat5
+0000162a t .lit7_mat5
+0000162c t .lit5_mat5
+0000162e t .lit3_mat5
+00001630 t .lit1_mat5
+00001658 t .litE_mat6
+0000165a t .litC_mat6
+0000165c t .litA_mat6
+0000165e t .lit8_mat6
+00001660 t .lit6_mat6
+00001662 t .lit4_mat6
 00001662 a frame79_tileset_data_size
-00001672 T PAL_fadeTo	C:/SGDK/src/pal.c:407
-000016de T PAL_fadeOut	C:/SGDK/src/pal.c:420
-00001710 t uint16ToStr	C:/SGDK/src/string.c:197
+00001664 t .lit2_mat6
+00001666 t .lit0_mat6
+0000168e t .litF_mat6
+00001690 t .litD_mat6
+00001692 t .litB_mat6
+00001694 t .lit9_mat6
+00001696 t .lit7_mat6
+00001698 t .lit5_mat6
+0000169a t .lit3_mat6
+0000169c t .lit1_mat6
+000016c6 t .litE_mat7
+000016c8 t .litC_mat7
+000016ca t .litA_mat7
+000016cc t .lit8_mat7
+000016ce t .lit6_mat7
+000016d0 t .lit4_mat7
+000016d2 t .lit2_mat7
+000016d4 t .lit0_mat7
+000016fe t .litF_mat7
+00001700 t .litD_mat7
+00001702 t .litB_mat7
+00001704 t .lit9_mat7
+00001706 t .lit7_mat7
+00001708 t .lit5_mat7
+0000170a t .lit3_mat7
+0000170c t .lit1_mat7
+00001738 t .litE_mat8
+0000173a t .litC_mat8
+0000173c t .litA_mat8
+0000173e t .lit8_mat8
+00001740 t .lit6_mat8
+00001742 t .lit4_mat8
+00001744 t .lit2_mat8
+00001746 t .lit0_mat8
 0000175c a frame166_tileset_data_size
+00001772 t .litF_mat8
+00001774 t .litD_mat8
+00001776 t .litB_mat8
+00001778 t .lit9_mat8
+0000177a t .lit7_mat8
+0000177c t .lit5_mat8
+0000177e t .lit3_mat8
+00001780 t .lit1_mat8
 00001788 a frame139_tileset_data_size
+000017ae t .litE_mat9
+000017b0 t .litC_mat9
+000017b2 t .litA_mat9
+000017b4 t .lit8_mat9
+000017b6 t .lit6_mat9
+000017b8 t .lit4_mat9
+000017ba t .lit2_mat9
+000017bc t .lit0_mat9
 000017da a frame152_tileset_data_size
-000017f0 T strlen	C:/SGDK/src/string.c:42
-00001802 T strnlen	C:/SGDK/src/string.c:52
-0000183a T strcpy	C:/SGDK/src/string.c:78
+000017ea t .litF_mat9
+000017ec t .litD_mat9
+000017ee t .litB_mat9
+000017f0 t .lit9_mat9
+000017f2 t .lit7_mat9
+000017f4 t .lit5_mat9
+000017f6 t .lit3_mat9
+000017f8 t .lit1_mat9
+00001828 t .litE_matA
+0000182a t .litC_matA
+0000182c t .litA_matA
+0000182e t .lit8_matA
+00001830 t .lit6_matA
+00001832 t .lit4_matA
+00001834 t .lit2_matA
+00001836 t .lit0_matA
 00001846 a frame73_tileset_data_size
-0000184c T strcat	C:/SGDK/src/string.c:121
-00001868 T intToHex	C:/SGDK/src/string.c:237
+00001866 t .litF_matA
+00001868 t .litD_matA
+0000186a t .litB_matA
+0000186c t .lit9_matA
+0000186e t .lit7_matA
+00001870 t .lit5_matA
+00001872 t .lit3_matA
+00001874 t .lit1_matA
 0000187e a frame52_tileset_data_size
+000018a6 t .litE_matB
+000018a8 t .litC_matB
+000018aa t .litA_matB
+000018ac t .lit8_matB
+000018ae t .lit6_matB
+000018b0 t .lit4_matB
+000018b2 t .lit2_matB
+000018b4 t .lit0_matB
 000018dc a frame107_tileset_data_size
+000018e6 t .litF_matB
+000018e8 t .litD_matB
+000018ea t .litB_matB
+000018ec t .lit9_matB
 000018ec a frame72_tileset_data_size
-00001922 T uintToStr	C:/SGDK/src/string.c:175
+000018ee t .lit7_matB
+000018f0 t .lit5_matB
+000018f2 t .lit3_matB
+000018f4 t .lit1_matB
+00001928 t .litE_matC
+0000192a t .litC_matC
+0000192c t .litA_matC
 0000192c a frame53_tileset_data_size
+0000192e t .lit8_matC
+00001930 t .lit6_matC
+00001932 t .lit4_matC
+00001934 t .lit2_matC
 00001934 a frame54_tileset_data_size
+00001936 t .lit0_matC
+0000196a t .litF_matC
+0000196c t .litD_matC
+0000196e t .litB_matC
+00001970 t .lit9_matC
+00001972 t .lit7_matC
+00001974 t .lit5_matC
+00001976 t .lit3_matC
+00001978 t .lit1_matC
+000019ae t .litE_matD
 000019ae a frame156_tileset_data_size
+000019b0 t .litC_matD
+000019b2 t .litA_matD
+000019b4 t .lit8_matD
+000019b6 t .lit6_matD
+000019b8 t .lit4_matD
+000019ba t .lit2_matD
+000019bc t .lit0_matD
 000019be a frame167_tileset_data_size
-000019c0 T vsprintf	C:/SGDK/src/string.c:441
+000019f2 t .litF_matD
+000019f4 t .litD_matD
 000019f4 a frame165_tileset_data_size
+000019f6 t .litB_matD
+000019f8 t .lit9_matD
+000019fa t .lit7_matD
+000019fc t .lit5_matD
+000019fe t .lit3_matD
+00001a00 t .lit1_matD
+00001a38 t .litE_matE
+00001a3a t .litC_matE
+00001a3c t .litA_matE
+00001a3e t .lit8_matE
+00001a40 t .lit6_matE
+00001a42 t .lit4_matE
+00001a44 t .lit2_matE
+00001a46 t .lit0_matE
 00001a4e a frame1_tileset_data_size
 00001a62 a frame41_tileset_data_size
 00001a76 a frame138_tileset_data_size
+00001a7e t .litF_matE
+00001a80 t .litD_matE
+00001a82 t .litB_matE
+00001a84 t .lit9_matE
+00001a86 t .lit7_matE
+00001a88 t .lit5_matE
+00001a8a t .lit3_matE
+00001a8c t .lit1_matE
 00001a9e a frame63_tileset_data_size
+00001ac6 t .litE_matF
+00001ac8 t .litC_matF
+00001aca t .litA_matF
+00001acc t .lit8_matF
+00001ace t .lit6_matF
+00001ad0 t .lit4_matF
+00001ad2 t .lit2_matF
+00001ad4 t .lit0_matF
+00001b0e t .litF_matF
+00001b10 t .litD_matF
+00001b12 t .litB_matF
+00001b14 t .lit9_matF
+00001b16 t .lit7_matF
+00001b18 t .lit5_matF
+00001b1a t .lit3_matF
 00001b1a a frame173_tileset_data_size
+00001b1c t .lit1_matF
 00001b2c a frame84_tileset_data_size
 00001b38 a frame106_tileset_data_size
 00001b4c a frame42_tileset_data_size
+00001b58 t DMA_queueDmaFast
 00001bae a frame61_tileset_data_size
 00001be0 a frame147_tileset_data_size
 00001be8 a frame164_tileset_data_size
@@ -339,6 +589,7 @@
 00001c76 a frame105_tileset_data_size
 00001c9a a frame157_tileset_data_size
 00001ca4 a frame99_tileset_data_size
+00001ca6 t DMA_doDmaFast
 00001cba a frame70_tileset_data_size
 00001cee a frame170_tileset_data_size
 00001d18 a frame16_tileset_data_size
@@ -350,6 +601,7 @@
 00001e10 a frame132_tileset_data_size
 00001e14 a frame129_tileset_data_size
 00001e32 a frame59_tileset_data_size
+00001e36 t DMA_doCPUCopyDirect
 00001e3a a frame101_tileset_data_size
 00001e3c a frame176_tileset_data_size
 00001e40 a frame15_tileset_data_size
@@ -358,43 +610,36 @@
 00001e80 a frame69_tileset_data_size
 00001ea0 a frame98_tileset_data_size
 00001ed2 a frame175_tileset_data_size
-00001f02 T _int_callback	C:/SGDK/src/sys.c:414
-00001f04 T _vblank_dummy_callback	C:/SGDK/src/sys.c:421
-00001f06 T _vint_dummy_callback	C:/SGDK/src/sys.c:427
-00001f08 T _hint_dummy_callback	C:/SGDK/src/sys.c:433
-00001f0a T _extint_dummy_callback	C:/SGDK/src/sys.c:439
-00001f0c t internal_reset	C:/SGDK/src/sys.c:597
 00001f12 a frame67_tileset_data_size
 00001f1c a frame120_tileset_data_size
 00001f28 a frame68_tileset_data_size
 00001f46 a frame56_tileset_data_size
 00001f60 a frame131_tileset_data_size
+00001f7a t DMA_doCPUCopy
 00001f86 a frame87_tileset_data_size
 00001fa4 a frame49_tileset_data_size
 00001fb6 a frame28_tileset_data_size
 00001fcc a frame158_tileset_data_size
-00001ff4 T SYS_disableInts	C:/SGDK/src/sys.c:801
 00002026 a frame2_tileset_data_size
-00002026 T SYS_enableInts	C:/SGDK/src/sys.c:829
 0000202c a frame168_tileset_data_size
 00002030 a frame126_tileset_data_size
 00002030 a frame4_tileset_data_size
-00002054 T SYS_setExtIntCallback	C:/SGDK/src/sys.c:875
+00002034 t MEM_alloc
 00002058 a frame71_tileset_data_size
-0000206a T SYS_isInVInt	C:/SGDK/src/sys.c:917
 0000206c a frame100_tileset_data_size
 0000206e a frame78_tileset_data_size
 00002074 a frame172_tileset_data_size
-00002076 T SYS_doVBlankProcessEx	C:/SGDK/src/sys.c:660
 00002098 a frame43_tileset_data_size
 000020a0 a frame5_tileset_data_size
 000020d6 a frame77_tileset_data_size
 000020f8 a frame130_tileset_data_size
 000020f8 a frame95_tileset_data_size
+0000210a t DMA_setBufferSize
 00002114 a frame13_tileset_data_size
 00002148 a frame11_tileset_data_size
 0000214e a frame125_tileset_data_size
 00002162 a frame115_tileset_data_size
+00002162 t MEM_pack
 0000217c a frame66_tileset_data_size
 0000217c a frame7_tileset_data_size
 0000217e a frame104_tileset_data_size
@@ -402,11 +647,16 @@
 000021b4 a frame123_tileset_data_size
 000021c2 a frame122_tileset_data_size
 000021c6 a frame10_tileset_data_size
+000021ca t _int_callback
+000021cc t _vblank_dummy_callback
+000021ce t _vint_dummy_callback
+000021d0 t _hint_dummy_callback
+000021d2 t _extint_dummy_callback
 000021d2 a frame6_tileset_data_size
+000021d4 t VDP_setHVLatching
 000021e6 a frame3_tileset_data_size
-000021ec T SYS_doVBlankProcess	C:/SGDK/src/sys.c:655
-000021fa T _start_entry	C:/SGDK/src/sys.c:445
 00002214 a frame124_tileset_data_size
+00002214 t VDP_getPlaneAddress
 0000221a a frame136_tileset_data_size
 0000221e a frame34_tileset_data_size
 00002220 a frame58_tileset_data_size
@@ -415,68 +665,48 @@
 00002270 a frame33_tileset_data_size
 00002272 a frame133_tileset_data_size
 00002280 a frame121_tileset_data_size
-000022ae T _reset_entry	C:/SGDK/src/sys.c:587
 000022b0 a frame8_tileset_data_size
-000022ca T addFrameLoad	C:/SGDK/src/sys.c:977
-00002336 T getSubTickInternal	C:/SGDK/src/timer.c:44
+000022c6 t XGM_unloadDriver
+000022de t XGM2_unloadDriver
+000022e6 t Z80_getAndRequestBus.constprop.0
+00002314 t SND_DPCM2_unloadDriver
+00002314 t SND_PCM_unloadDriver
+00002314 t SND_PCM4_unloadDriver
+00002316 t externalIntCB
 00002338 a frame27_tileset_data_size
 00002340 a frame135_tileset_data_size
 00002372 a frame117_tileset_data_size
 0000237c a frame116_tileset_data_size
-00002390 T getSubTick	C:/SGDK/src/timer.c:57
 000023a4 a frame44_tileset_data_size
 000023a6 a frame148_tileset_data_size
-000023c4 T getTick	C:/SGDK/src/timer.c:63
 000023d2 a frame47_tileset_data_size
-000023f0 T waitSubTick	C:/SGDK/src/timer.c:109
 0000240a a frame36_tileset_data_size
 00002428 a frame57_tileset_data_size
+00002456 t read6Btn
 00002462 a frame25_tileset_data_size
-00002478 T waitTick	C:/SGDK/src/timer.c:159
 000024b2 a frame88_tileset_data_size
 000024d6 a frame64_tileset_data_size
 000024e2 a frame24_tileset_data_size
-000024ec T waitMs	C:/SGDK/src/timer.c:194
 00002510 a frame89_tileset_data_size
 0000251c a frame149_tileset_data_size
 0000252e a frame45_tileset_data_size
 00002538 a frame22_tileset_data_size
 00002548 a frame174_tileset_data_size
-00002550 T setRandomSeed	C:/SGDK/src/tools.c:30
-00002568 T KLog	C:/SGDK/src/tools.c:73
-0000258c T kprintf	C:/SGDK/src/tools.c:57
-000025c8 T KLog_U2_	C:/SGDK/src/tools.c:119
+0000259e t readMouse
 000025e8 a frame46_tileset_data_size
 0000261c a frame65_tileset_data_size
-0000263e T KLog_U3_	C:/SGDK/src/tools.c:153
 0000266a a frame29_tileset_data_size
 000026ca a frame32_tileset_data_size
-000026d2 T allocateTileSet	C:/SGDK/src/tools.c:901
-000026fc T allocateTileMap	C:/SGDK/src/tools.c:924
 00002712 a frame48_tileset_data_size
 00002728 a frame35_tileset_data_size
-0000272c T unpack	C:/SGDK/src/tools.c:1132
-00002764 T unpackTileSet	C:/SGDK/src/tools.c:1053
 00002776 a frame26_tileset_data_size
 000027a8 a frame94_tileset_data_size
 000027b2 a frame150_tileset_data_size
 000027c0 a frame18_tileset_data_size
 000027ca a frame86_tileset_data_size
-000027d8 T unpackTileMap	C:/SGDK/src/tools.c:1080
 00002832 a frame151_tileset_data_size
-00002856 T VDP_getReg	C:/SGDK/src/vdp.c:194
-00002876 T VDP_setEnable	C:/SGDK/src/vdp.c:328
-000028a8 T VDP_setScreenHeight224	C:/SGDK/src/vdp.c:351
-000028d0 T VDP_setScreenWidth320	C:/SGDK/src/vdp.c:394
-00002908 T VDP_setScrollingMode	C:/SGDK/src/vdp.c:531
-00002940 T VDP_setBackgroundColor	C:/SGDK/src/vdp.c:548
 00002944 a frame21_tileset_data_size
-0000295e T VDP_getAutoInc	C:/SGDK/src/vdp.c:559
-00002966 T VDP_setAutoInc	C:/SGDK/src/vdp.c:564
-00002980 T VDP_getHVLatching	C:/SGDK/src/vdp.c:591
-0000298c T VDP_setHVLatching	C:/SGDK/src/vdp.c:596
-000029be T VDP_waitDMACompletion	C:/SGDK/src/vdp.c:842
-000029cc T VDP_resetScreen	C:/SGDK/src/vdp.c:134
+000029a6 t readTeamPlayer
 000029e2 a frame23_tileset_data_size
 00002a00 a frame75_tileset_data_size
 00002a74 a frame85_tileset_data_size
@@ -487,1574 +717,1183 @@
 00002afc a frame90_tileset_data_size
 00002b24 a frame37_tileset_data_size
 00002b26 a frame31_tileset_data_size
-00002b56 T getAdjustedVCounterInternal	C:/SGDK/src/vdp.c:965
-00002bb8 T VDP_waitVBlank	C:/SGDK/src/vdp.c:887
 00002c52 a frame38_tileset_data_size
 00002c5e a frame102_tileset_data_size
 00002c68 a frame17_tileset_data_size
-00002c94 T VDP_waitVSync	C:/SGDK/src/vdp.c:953
 00002ca0 a frame103_tileset_data_size
-00002ca2 T updateUserTileMaxIndex	C:/SGDK/src/vdp.c:1026
 00002cb0 a frame113_tileset_data_size
-00002cbc t updateMapsAddress	C:/SGDK/src/vdp.c:1032
 00002d30 a frame159_tileset_data_size
-00002d3e T VDP_init	C:/SGDK/src/vdp.c:65
 00002d6e a frame39_tileset_data_size
 00002db4 a frame40_tileset_data_size
 00002dfe a frame96_tileset_data_size
 00002e60 a frame91_tileset_data_size
 00002e78 a frame92_tileset_data_size
-00002ea0 T VDP_setReg	C:/SGDK/src/vdp.c:200
 00002f04 a frame160_tileset_data_size
 00002f62 a frame163_tileset_data_size
 00002fce a frame114_tileset_data_size
-000030c8 T VDP_setBGAAddress	C:/SGDK/src/vdp.c:694
-000030fc T VDP_setBGBAddress	C:/SGDK/src/vdp.c:707
-00003130 T VDP_setWindowAddress	C:/SGDK/src/vdp.c:720
-00003176 T VDP_setSpriteListAddress	C:/SGDK/src/vdp.c:736
-000031bc T VDP_setHScrollTableAddress	C:/SGDK/src/vdp.c:752
-000031f0 T VDP_setPlaneSize	C:/SGDK/src/vdp.c:418
+00003178 t readLightgun
 00003260 a frame161_tileset_data_size
 00003280 a frame162_tileset_data_size
-000033ae T VDP_setHorizontalScroll	C:/SGDK/src/vdp_bg.c:34
-000033f0 T VDP_setVerticalScrollTile	C:/SGDK/src/vdp_bg.c:122
-00003438 T VDP_doVBlankScrollProcess	C:/SGDK/src/vdp_bg.c:132
-000034fa T VDP_clearPlane	C:/SGDK/src/vdp_bg.c:177
-000035bc T VDP_setTextPlane	C:/SGDK/src/vdp_bg.c:210
-000035c6 T VDP_setTextPalette	C:/SGDK/src/vdp_bg.c:215
-000035ea T VDP_setTextPriority	C:/SGDK/src/vdp_bg.c:221
-0000360a T VDP_drawTextEx	C:/SGDK/src/vdp_bg.c:227
-000036d4 T VDP_drawTextBG	C:/SGDK/src/vdp_bg.c:321
-00003704 T VDP_drawText	C:/SGDK/src/vdp_bg.c:380
-0000372a T VDP_drawImageEx	C:/SGDK/src/vdp_bg.c:495
-000037d2 T VDP_releaseAllSprites	C:/SGDK/src/vdp_spr.c:35
-00003800 T VDP_clearSprites	C:/SGDK/src/vdp_spr.c:151
-0000380e T VDP_resetSprites	C:/SGDK/src/vdp_spr.c:27
-0000381c t prepareTileMapDataRowEx	C:/SGDK/src/vdp_tile.c:942
-000038b2 t prepareTileMapDataColumnEx	C:/SGDK/src/vdp_tile.c:968
-00003976 T VDP_loadTileData	C:/SGDK/src/vdp_tile.c:28
-000039a4 T VDP_loadTileSet	C:/SGDK/src/vdp_tile.c:38
-00003a1a T VDP_loadFont	C:/SGDK/src/vdp_tile.c:60
-00003a3e T VDP_fillTileData	C:/SGDK/src/vdp_tile.c:70
-00003a7e T VDP_getPlaneAddress	C:/SGDK/src/vdp_tile.c:80
-00003b34 t setTileMapDataColumnEx	C:/SGDK/src/vdp_tile.c:608
-00003d24 T VDP_clearTileMap	C:/SGDK/src/vdp_tile.c:97
-00003d62 T VDP_setTileMapDataEx	C:/SGDK/src/vdp_tile.c:147
-00003e2c t setTileMapDataRowEx	C:/SGDK/src/vdp_tile.c:451
-00003f24 T VDP_setTileMapDataRectEx	C:/SGDK/src/vdp_tile.c:364
-00004114 T VDP_setTileMapDataRowEx	C:/SGDK/src/vdp_tile.c:510
-000041d4 T VDP_setTileMapEx	C:/SGDK/src/vdp_tile.c:782
-000042b2 T Z80_isBusTaken	C:/SGDK/src/z80_ctrl.c:60
-000042c4 T Z80_requestBus	C:/SGDK/src/z80_ctrl.c:69
-000042ea T Z80_getAndRequestBus	C:/SGDK/src/z80_ctrl.c:89
-00004326 T Z80_releaseBus	C:/SGDK/src/z80_ctrl.c:114
-00004330 T Z80_startReset	C:/SGDK/src/z80_ctrl.c:123
-0000433a T Z80_endReset	C:/SGDK/src/z80_ctrl.c:131
-00004344 T Z80_setBank	C:/SGDK/src/z80_ctrl.c:140
-00004358 T Z80_clear	C:/SGDK/src/z80_ctrl.c:167
-000043a0 T Z80_upload	C:/SGDK/src/z80_ctrl.c:183
-00004408 T Z80_unloadDriver	C:/SGDK/src/z80_ctrl.c:223
-00004464 T Z80_loadDriverInternal	C:/SGDK/src/z80_ctrl.c:253
-000044ca T Z80_loadDriver	C:/SGDK/src/z80_ctrl.c:285
-00004570 T Z80_init	C:/SGDK/src/z80_ctrl.c:43
-000045a6 T Z80_isDriverReady	C:/SGDK/src/z80_ctrl.c:324
-000045dc T Z80_useBusProtection	C:/SGDK/src/z80_ctrl.c:343
-000045e6 T Z80_setBusProtection	C:/SGDK/src/z80_ctrl.c:348
-0000463a T Z80_enableBusProtection	C:/SGDK/src/z80_ctrl.c:367
-00004648 T Z80_disableBusProtection	C:/SGDK/src/z80_ctrl.c:372
-00004654 T Z80_getForceDelayDMA	C:/SGDK/src/z80_ctrl.c:377
-00004660 T SND_NULL_loadDriver	C:/SGDK/src/snd/sound.c:19
-000046bc t setNextXFrame	C:/SGDK/src/snd/xgm.c:605
-00004716 T XGM_unloadDriver	C:/SGDK/src/snd/xgm.c:94
-00004732 T XGM_setMusicTempo	C:/SGDK/src/snd/xgm.c:493
-00004754 T XGM_loadDriver	C:/SGDK/src/snd/xgm.c:54
-00004838 T XGM_doVBlankProcess	C:/SGDK/src/snd/xgm.c:662
-0000488e t releaseAccess	C:/SGDK/src/snd/xgm2.c:1057
-000048a4 t getAccess	C:/SGDK/src/snd/xgm2.c:1029
-00004910 t setLoopNumber	C:/SGDK/src/snd/xgm2.c:747
-0000493a t setFMVolume	C:/SGDK/src/snd/xgm2.c:828
-00004992 t setPSGVolume	C:/SGDK/src/snd/xgm2.c:846
-000049ea t setMusicTempo	C:/SGDK/src/snd/xgm2.c:773
-00004a4a T XGM2_loadDriver	C:/SGDK/src/snd/xgm2.c:211
-00004b0a T XGM2_unloadDriver	C:/SGDK/src/snd/xgm2.c:242
-00004b16 T XGM2_stop	C:/SGDK/src/snd/xgm2.c:421
-00004b74 T XGM2_pause	C:/SGDK/src/snd/xgm2.c:446
-00004bc0 T XGM2_doVBlankFadeProcess	C:/SGDK/src/snd/xgm2.c:701
-00004c64 T SND_DPCM2_loadDriver	C:/SGDK/src/snd/pcm/snd_dpcm2.c:23
-00004cec T SND_DPCM2_unloadDriver	C:/SGDK/src/snd/pcm/snd_dpcm2.c:53
-00004cee T SND_PCM_loadDriver	C:/SGDK/src/snd/pcm/snd_pcm.c:22
-00004d76 T SND_PCM_unloadDriver	C:/SGDK/src/snd/pcm/snd_pcm.c:52
-00004d78 T SND_PCM4_loadDriver	C:/SGDK/src/snd/pcm/snd_pcm4.c:24
-00004e14 T SND_PCM4_unloadDriver	C:/SGDK/src/snd/pcm/snd_pcm4.c:58
-00004e16 T flushQueue
-00004e2a t .fq_loop
-00004e38 t .fq_end
-00004e3a T KDebug_Alert
-00004e56 T memset_
-00004ece T memsetU16
-00004f2c T memcpy_
-00004fd0 T SYS_getInterruptMaskLevel
-00004fda T SYS_setInterruptMaskLevel
-00004ff2 T SYS_getAndSetInterruptMaskLevel
-0000500c T aplib_unpack
-00005012 t aplib_decrunch
-00005026 t .copy_byte
-00005028 t .next_sequence_init
-0000502a t .next_sequence
-0000503a t .get_3_bits
-0000504a t .write_byte
-0000504e t .short_match
-0000505c t .code_pair
-00005068 t .normal_code_pair
-00005076 t .compare_1280
-0000507a t .compare_128
-0000507e t .domatch_with_2inc
-00005080 t .domatch_with_inc
-00005082 t .domatch_new_lastpos
-00005084 t .copy_code_pair
-0000508a t .loop_do_copy
-00005094 t .get_bit
-0000509c t .still_bits_left
-0000509e t .decode_gamma
-000050a0 t .get_more_gamma
-000050aa t .end_decrunch
-000050b4 T lz4w_unpack
-000050ba t lz4w_unpack_a
-000050d4 t .jump_table
-000055d2 t .lmr_len_01
-000056e6 t .lmr_len_00
-000058f8 t .lm_len_00
-000058fe t .next
-0000590e t .litE_mat0
-00005910 t .litC_mat0
-00005912 t .litA_mat0
-00005914 t .lit8_mat0
-00005916 t .lit6_mat0
-00005918 t .lit4_mat0
-0000591a t .lit2_mat0
-00005920 t .long_match_1
-00005932 t .litF_mat0
-00005934 t .litD_mat0
-00005936 t .litB_mat0
-00005938 t .lit9_mat0
-0000593a t .lit7_mat0
-0000593c t .lit5_mat0
-0000593e t .lit3_mat0
-00005940 t .lit1_mat0
-00005946 t .long_match_2
-00005958 t .lit0_mat0
-0000595c t .long_match_3
-0000596e t .lm_rom
-0000597a t .done
-00005980 t .no_byte
-0000598a t .lmr_jump_table
-00005d8a t .litE_mat1
-00005d8c t .litC_mat1
-00005d8e t .litA_mat1
-00005d90 t .lit8_mat1
-00005d92 t .lit6_mat1
-00005d94 t .lit4_mat1
-00005d96 t .lit2_mat1
-00005d98 t .lit0_mat1
-00005db6 t .litF_mat1
-00005db8 t .litD_mat1
-00005dba t .litB_mat1
-00005dbc t .lit9_mat1
-00005dbe t .lit7_mat1
-00005dc0 t .lit5_mat1
-00005dc2 t .lit3_mat1
-00005dc4 t .lit1_mat1
-00005de4 t .litE_mat2
-00005de6 t .litC_mat2
-00005de8 t .litA_mat2
-00005dea t .lit8_mat2
-00005dec t .lit6_mat2
-00005dee t .lit4_mat2
-00005df0 t .lit2_mat2
-00005df2 t .lit0_mat2
-00005e12 t .litF_mat2
-00005e14 t .litD_mat2
-00005e16 t .litB_mat2
-00005e18 t .lit9_mat2
-00005e1a t .lit7_mat2
-00005e1c t .lit5_mat2
-00005e1e t .lit3_mat2
-00005e20 t .lit1_mat2
-00005e42 t .litE_mat3
-00005e44 t .litC_mat3
-00005e46 t .litA_mat3
-00005e48 t .lit8_mat3
-00005e4a t .lit6_mat3
-00005e4c t .lit4_mat3
-00005e4e t .lit2_mat3
-00005e50 t .lit0_mat3
-00005e72 t .litF_mat3
-00005e74 t .litD_mat3
-00005e76 t .litB_mat3
-00005e78 t .lit9_mat3
-00005e7a t .lit7_mat3
-00005e7c t .lit5_mat3
-00005e7e t .lit3_mat3
-00005e80 t .lit1_mat3
-00005ea4 t .litE_mat4
-00005ea6 t .litC_mat4
-00005ea8 t .litA_mat4
-00005eaa t .lit8_mat4
-00005eac t .lit6_mat4
-00005eae t .lit4_mat4
-00005eb0 t .lit2_mat4
-00005eb2 t .lit0_mat4
-00005ed6 t .litF_mat4
-00005ed8 t .litD_mat4
-00005eda t .litB_mat4
-00005edc t .lit9_mat4
-00005ede t .lit7_mat4
-00005ee0 t .lit5_mat4
-00005ee2 t .lit3_mat4
-00005ee4 t .lit1_mat4
-00005f0a t .litE_mat5
-00005f0c t .litC_mat5
-00005f0e t .litA_mat5
-00005f10 t .lit8_mat5
-00005f12 t .lit6_mat5
-00005f14 t .lit4_mat5
-00005f16 t .lit2_mat5
-00005f18 t .lit0_mat5
-00005f3e t .litF_mat5
-00005f40 t .litD_mat5
-00005f42 t .litB_mat5
-00005f44 t .lit9_mat5
-00005f46 t .lit7_mat5
-00005f48 t .lit5_mat5
-00005f4a t .lit3_mat5
-00005f4c t .lit1_mat5
-00005f74 t .litE_mat6
-00005f76 t .litC_mat6
-00005f78 t .litA_mat6
-00005f7a t .lit8_mat6
-00005f7c t .lit6_mat6
-00005f7e t .lit4_mat6
-00005f80 t .lit2_mat6
-00005f82 t .lit0_mat6
-00005faa t .litF_mat6
-00005fac t .litD_mat6
-00005fae t .litB_mat6
-00005fb0 t .lit9_mat6
-00005fb2 t .lit7_mat6
-00005fb4 t .lit5_mat6
-00005fb6 t .lit3_mat6
-00005fb8 t .lit1_mat6
-00005fe2 t .litE_mat7
-00005fe4 t .litC_mat7
-00005fe6 t .litA_mat7
-00005fe8 t .lit8_mat7
-00005fea t .lit6_mat7
-00005fec t .lit4_mat7
-00005fee t .lit2_mat7
-00005ff0 t .lit0_mat7
-0000601a t .litF_mat7
-0000601c t .litD_mat7
-0000601e t .litB_mat7
-00006020 t .lit9_mat7
-00006022 t .lit7_mat7
-00006024 t .lit5_mat7
-00006026 t .lit3_mat7
-00006028 t .lit1_mat7
-00006054 t .litE_mat8
-00006056 t .litC_mat8
-00006058 t .litA_mat8
-0000605a t .lit8_mat8
-0000605c t .lit6_mat8
-0000605e t .lit4_mat8
-00006060 t .lit2_mat8
-00006062 t .lit0_mat8
-0000608e t .litF_mat8
-00006090 t .litD_mat8
-00006092 t .litB_mat8
-00006094 t .lit9_mat8
-00006096 t .lit7_mat8
-00006098 t .lit5_mat8
-0000609a t .lit3_mat8
-0000609c t .lit1_mat8
-000060ca t .litE_mat9
-000060cc t .litC_mat9
-000060ce t .litA_mat9
-000060d0 t .lit8_mat9
-000060d2 t .lit6_mat9
-000060d4 t .lit4_mat9
-000060d6 t .lit2_mat9
-000060d8 t .lit0_mat9
-00006106 t .litF_mat9
-00006108 t .litD_mat9
-0000610a t .litB_mat9
-0000610c t .lit9_mat9
-0000610e t .lit7_mat9
-00006110 t .lit5_mat9
-00006112 t .lit3_mat9
-00006114 t .lit1_mat9
-00006144 t .litE_matA
-00006146 t .litC_matA
-00006148 t .litA_matA
-0000614a t .lit8_matA
-0000614c t .lit6_matA
-0000614e t .lit4_matA
-00006150 t .lit2_matA
-00006152 t .lit0_matA
-00006182 t .litF_matA
-00006184 t .litD_matA
-00006186 t .litB_matA
-00006188 t .lit9_matA
-0000618a t .lit7_matA
-0000618c t .lit5_matA
-0000618e t .lit3_matA
-00006190 t .lit1_matA
-000061c2 t .litE_matB
-000061c4 t .litC_matB
-000061c6 t .litA_matB
-000061c8 t .lit8_matB
-000061ca t .lit6_matB
-000061cc t .lit4_matB
-000061ce t .lit2_matB
-000061d0 t .lit0_matB
-00006202 t .litF_matB
-00006204 t .litD_matB
-00006206 t .litB_matB
-00006208 t .lit9_matB
-0000620a t .lit7_matB
-0000620c t .lit5_matB
-0000620e t .lit3_matB
-00006210 t .lit1_matB
-00006244 t .litE_matC
-00006246 t .litC_matC
-00006248 t .litA_matC
-0000624a t .lit8_matC
-0000624c t .lit6_matC
-0000624e t .lit4_matC
-00006250 t .lit2_matC
-00006252 t .lit0_matC
-00006286 t .litF_matC
-00006288 t .litD_matC
-0000628a t .litB_matC
-0000628c t .lit9_matC
-0000628e t .lit7_matC
-00006290 t .lit5_matC
-00006292 t .lit3_matC
-00006294 t .lit1_matC
-000062ca t .litE_matD
-000062cc t .litC_matD
-000062ce t .litA_matD
-000062d0 t .lit8_matD
-000062d2 t .lit6_matD
-000062d4 t .lit4_matD
-000062d6 t .lit2_matD
-000062d8 t .lit0_matD
-0000630e t .litF_matD
-00006310 t .litD_matD
-00006312 t .litB_matD
-00006314 t .lit9_matD
-00006316 t .lit7_matD
-00006318 t .lit5_matD
-0000631a t .lit3_matD
-0000631c t .lit1_matD
-00006354 t .litE_matE
-00006356 t .litC_matE
-00006358 t .litA_matE
-0000635a t .lit8_matE
-0000635c t .lit6_matE
-0000635e t .lit4_matE
-00006360 t .lit2_matE
-00006362 t .lit0_matE
-0000639a t .litF_matE
-0000639c t .litD_matE
-0000639e t .litB_matE
-000063a0 t .lit9_matE
-000063a2 t .lit7_matE
-000063a4 t .lit5_matE
-000063a6 t .lit3_matE
-000063a8 t .lit1_matE
-000063e2 t .litE_matF
-000063e4 t .litC_matF
-000063e6 t .litA_matF
-000063e8 t .lit8_matF
-000063ea t .lit6_matF
-000063ec t .lit4_matF
-000063ee t .lit2_matF
-000063f0 t .lit0_matF
-0000642a t .litF_matF
-0000642c t .litD_matF
-0000642e t .litB_matF
-00006430 t .lit9_matF
-00006432 t .lit7_matF
-00006434 t .lit5_matF
-00006436 t .lit3_matF
-00006438 t .lit1_matF
-00006474 t TH_CONTROL_PHASE	C:/SGDK/src/joy.c:639
-00006492 t THREELINE_HANDSHAKE	C:/SGDK/src/joy.c:655
-000064e6 t externalIntCB	C:/SGDK/src/joy.c:281
-000065b2 t read3Btn	C:/SGDK/src/joy.c:675
-00006602 t read6Btn	C:/SGDK/src/joy.c:693
-00006680 t start3lhs	C:/SGDK/src/joy.c:722
-00006772 t readMouse	C:/SGDK/src/joy.c:773
-00006976 t readTrackball	C:/SGDK/src/joy.c:1175
-00006acc t readTeamPlayer	C:/SGDK/src/joy.c:844
-00006e78 t readLightgun	C:/SGDK/src/joy.c:1027
-0000721e T JOY_setSupport	C:/SGDK/src/joy.c:316
-0000769a T JOY_reset	C:/SGDK/src/joy.c:59
-00007a68 T JOY_init	C:/SGDK/src/joy.c:50
-00007a76 T JOY_update	C:/SGDK/src/joy.c:1248
-00007d6c T PSG_reset	C:/SGDK/src/psg.c:9
-00007da4 T SPR_isInitialized	C:/SGDK/src/sprite_eng.c:190
-00007db0 T SPR_defragVRAM	C:/SGDK/src/sprite_eng.c:542
-00007e60 T SRAM_disable	C:/SGDK/src/sram.c:16
-00007e6a T getZeroU8	C:/SGDK/src/types.c:4
-00007e6e T VRAM_releaseRegion	C:/SGDK/src/vram.c:34
-00007e88 T VRAM_clearRegion	C:/SGDK/src/vram.c:41
-00007eb2 T VRAM_createRegion	C:/SGDK/src/vram.c:23
-00007eee T VRAM_getFree	C:/SGDK/src/vram.c:54
-00007f22 T VRAM_getLargestFreeBlock	C:/SGDK/src/vram.c:79
-00007f5c T VRAM_alloc	C:/SGDK/src/vram.c:135
-00008072 T YM2612_write	C:/SGDK/src/ym2612.c:118
-000080a2 t writeSlotReg	C:/SGDK/src/ym2612.c:11
-000080f0 t writeChannelReg	C:/SGDK/src/ym2612.c:17
-00008134 T YM2612_reset	C:/SGDK/src/ym2612.c:23
-000082f4 T MDDBG__SymbolDataPtr
-000082f8 t __ErrorHandler
-000082f8 t MDDBG__ErrorHandler
-00008420 t MDDBG__Error_IdleLoop
-0000843a t MDDBG__Error_InitConsole
-00008446 t MDDBG__Error_MaskStackBoundaries
-000084b0 t MDDBG__Error_DrawOffsetLocation
-000084b4 t MDDBG__Error_DrawOffsetLocation2
-000084ba t MDDBG__Error_DrawOffsetLocation__inj
-00008548 t MDDBG__ErrorHandler_SetupVDP
-0000857e t MDDBG__ErrorHandler_VDPConfig
-00008594 t MDDBG__ErrorHandler_VDPConfig_Nametables
-000085d0 t MDDBG__ErrorHandler_ConsoleConfig_Initial
-000085d4 t MDDBG__ErrorHandler_ConsoleConfig_Shared
-00008604 t MDDBG__Str_OffsetLocation_24bit
-0000860d t MDDBG__Str_OffsetLocation_32bit
-00008648 t MDDBG__Art1bpp_Font
-00008942 t MDDBG__GetSymbolByOffset
-00008c5c t MDDBG__FormatString
-00008d36 t MDDBG__Console_Init
-00008d74 t MDDBG__Console_Reset
-00008d76 t MDDBG__Console_InitShared
-00008dc0 t MDDBG__Console_SetPosAsXY_Stack
-00008dc6 t MDDBG__Console_SetPosAsXY
-00008dfa t MDDBG__Console_GetPosAsXY
-00008e20 t MDDBG__Console_StartNewLine
-00008e4e t MDDBG__Console_SetBasePattern
-00008e6a t MDDBG__Console_SetWidth
-00008e88 t MDDBG__Console_WriteLine_WithPattern
-00008e8a t MDDBG__Console_WriteLine
-00008e8e t MDDBG__Console_Write
-00008f54 t MDDBG__Console_WriteLine_Formatted
-00008f58 t MDDBG__Console_Write_Formatted
-00008f88 t MDDBG__Decomp1bpp
-00008fa4 t MDDBG__KDebug_WriteLine_Formatted
-00008fa8 t MDDBG__KDebug_Write_Formatted
-00008ffc t MDDBG__KDebug_FlushLine
-00009006 t MDDBG__KDebug_WriteLine
-0000900a t MDDBG__KDebug_Write
-00009038 t MDDBG__ErrorHandler_ConsoleOnly
-0000905e t MDDBG__ErrorHandler_ClearConsole
-00009088 t MDDBG__ErrorHandler_PauseConsole
-000090c2 t MDDBG__ErrorHandler_PagesController
-00009122 t MDDBG__VSync
-0000915c t MDDBG__ErrorHandler_ExtraDebuggerList
-00009168 t MDDBG__Debugger_AddressRegisters
-000091b4 t MDDBG__Debugger_Backtrace
-00009252 T _Bus_Error
-00009252 t MDDBG__BusError
-00009266 T _Address_Error
-00009266 t MDDBG__AddressError
-0000927e T _Illegal_Instruction
-0000927e t MDDBG__IllegalInstr
-0000929c T _Zero_Divide
-0000929c t MDDBG__ZeroDivide
-000092b2 T _Chk_Instruction
-000092b2 t MDDBG__ChkInstr
-000092cc T _Trapv_Instruction
-000092cc t MDDBG__TrapvInstr
-000092e8 T _Privilege_Violation
-000092e8 t MDDBG__PrivilegeViol
-00009306 T _Trace
-00009306 t MDDBG__Trace
-00009316 T _Line_1010_Emulation
-00009316 t MDDBG__Line1010Emu
-00009332 T _Line_1111_Emulation
-00009332 t MDDBG__Line1111Emu
-0000934e T _Error_Exception
-0000934e t MDDBG__ErrorExcept
-00009400 T smp_null
-00009500 T smp_null_dpcm
-00009580 T __mulsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:442
-00009580 T __mulsi3_internal	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:442
-000095a4 T __udivsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:469
-000095a4 T __udivsi3_internal	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:469
-000095cc t L3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:486
-000095ce t L4	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:487
-000095fa t L5	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:508
-000095fc t L6	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:510
-00009600 T __divsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:547
-00009600 T __divsi3_internal	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:547
-0000960e t L1	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:558
-00009618 t L2	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:567
-0000962a t L3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:576
-00009630 T __umodsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:585
-00009660 T __modsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:611
-00009690 T __CTOR_LIST__
-00009698 T __CTOR_END__
-00009698 T __DTOR_LIST__
-000096a0 T __DTOR_END__
-000096a0 t frame1_tileset
-000096a8 t frame1_tilemap
-000096b2 t frame1_palette
-000096b8 T frame1
-000096c4 t frame2_tileset
-000096cc t frame2_tilemap
-000096d6 T frame2
-000096e2 t frame3_tileset
-000096ea t frame3_tilemap
-000096f4 T frame3
-00009700 t frame4_tileset
-00009708 t frame4_tilemap
-00009712 T frame4
-0000971e t frame5_tileset
-00009726 t frame5_tilemap
-00009730 T frame5
-0000973c t frame6_tileset
-00009744 t frame6_tilemap
-0000974e T frame6
-0000975a t frame7_tileset
-00009762 t frame7_tilemap
-0000976c T frame7
-00009778 t frame8_tileset
-00009780 t frame8_tilemap
-0000978a T frame8
-00009796 t frame9_tileset
-0000979e t frame9_tilemap
-000097a8 T frame9
-000097b4 t frame10_tileset
-000097bc t frame10_tilemap
-000097c6 T frame10
-000097d2 t frame11_tileset
-000097da t frame11_tilemap
-000097e4 T frame11
-000097f0 t frame12_tileset
-000097f8 t frame12_tilemap
-00009802 T frame12
-0000980e t frame13_tileset
-00009816 t frame13_tilemap
-00009820 T frame13
-0000982c t frame14_tileset
-00009834 t frame14_tilemap
-0000983e T frame14
-0000984a t frame15_tileset
-00009852 t frame15_tilemap
-0000985c T frame15
-00009868 t frame16_tileset
-00009870 t frame16_tilemap
-0000987a T frame16
-00009886 t frame17_tileset
-0000988e t frame17_tilemap
-00009898 t frame17_palette
-0000989e T frame17
-000098aa t frame18_tileset
-000098b2 T frame18
-000098be t frame19_tileset
-000098c6 T frame19
-000098d2 t frame20_tileset
-000098da T frame20
-000098e6 t frame21_tileset
-000098ee T frame21
-000098fa t frame22_tileset
-00009902 T frame22
-0000990e t frame23_tileset
-00009916 T frame23
-00009922 t frame24_tileset
-0000992a T frame24
-00009936 t frame25_tileset
-0000993e T frame25
-0000994a t frame26_tileset
-00009952 T frame26
-0000995e t frame27_tileset
-00009966 T frame27
-00009972 t frame28_tileset
-0000997a T frame28
-00009986 t frame29_tileset
-0000998e T frame29
-0000999a t frame30_tileset
-000099a2 T frame30
-000099ae t frame31_tileset
-000099b6 T frame31
-000099c2 t frame32_tileset
-000099ca T frame32
-000099d6 t frame33_tileset
-000099de t frame33_tilemap
-000099e8 t frame33_palette
-000099ee T frame33
-000099fa t frame34_tileset
-00009a02 t frame34_tilemap
-00009a0c T frame34
-00009a18 t frame35_tileset
-00009a20 t frame35_tilemap
-00009a2a T frame35
-00009a36 t frame36_tileset
-00009a3e t frame36_tilemap
-00009a48 T frame36
-00009a54 t frame37_tileset
-00009a5c t frame37_tilemap
-00009a66 t frame37_palette
-00009a6c T frame37
-00009a78 t frame38_tileset
-00009a80 t frame38_tilemap
-00009a8a T frame38
-00009a96 t frame39_tileset
-00009a9e t frame39_tilemap
-00009aa8 T frame39
-00009ab4 t frame40_tileset
-00009abc t frame40_tilemap
-00009ac6 T frame40
-00009ad2 t frame41_tileset
-00009ada t frame41_tilemap
-00009ae4 t frame41_palette
-00009aea T frame41
-00009af6 t frame42_tileset
-00009afe t frame42_tilemap
-00009b08 T frame42
-00009b14 t frame43_tileset
-00009b1c t frame43_tilemap
-00009b26 T frame43
-00009b32 t frame44_tileset
-00009b3a t frame44_tilemap
-00009b44 T frame44
-00009b50 t frame45_tileset
-00009b58 t frame45_tilemap
-00009b62 T frame45
-00009b6e t frame46_tileset
-00009b76 t frame46_tilemap
-00009b80 T frame46
-00009b8c t frame47_tileset
-00009b94 t frame47_tilemap
-00009b9e T frame47
-00009baa t frame48_tileset
-00009bb2 t frame48_tilemap
-00009bbc T frame48
-00009bc8 t frame49_tileset
-00009bd0 t frame49_tilemap
-00009bda t frame49_palette
-00009be0 T frame49
-00009bec t frame50_tileset
-00009bf4 t frame50_tilemap
-00009bfe T frame50
-00009c0a t frame51_tileset
-00009c12 t frame51_tilemap
-00009c1c T frame51
-00009c28 t frame52_tileset
-00009c30 t frame52_tilemap
-00009c3a T frame52
-00009c46 t frame53_tileset
-00009c4e t frame53_tilemap
-00009c58 T frame53
-00009c64 t frame54_tileset
-00009c6c t frame54_tilemap
-00009c76 T frame54
-00009c82 t frame55_tileset
-00009c8a t frame55_tilemap
-00009c94 T frame55
-00009ca0 t frame56_tileset
-00009ca8 t frame56_tilemap
-00009cb2 T frame56
-00009cbe t frame57_tileset
-00009cc6 t frame57_tilemap
-00009cd0 T frame57
-00009cdc t frame58_tileset
-00009ce4 t frame58_tilemap
-00009cee T frame58
-00009cfa t frame59_tileset
-00009d02 t frame59_tilemap
-00009d0c T frame59
-00009d18 t frame60_tileset
-00009d20 t frame60_tilemap
-00009d2a T frame60
-00009d36 t frame61_tileset
-00009d3e t frame61_tilemap
-00009d48 T frame61
-00009d54 t frame62_tileset
-00009d5c t frame62_tilemap
-00009d66 T frame62
-00009d72 t frame63_tileset
-00009d7a t frame63_tilemap
-00009d84 T frame63
-00009d90 t frame64_tileset
-00009d98 t frame64_tilemap
-00009da2 T frame64
-00009dae t frame65_tileset
-00009db6 t frame65_tilemap
-00009dc0 T frame65
-00009dcc t frame66_tileset
-00009dd4 t frame66_tilemap
-00009dde T frame66
-00009dea t frame67_tileset
-00009df2 t frame67_tilemap
-00009dfc T frame67
-00009e08 t frame68_tileset
-00009e10 t frame68_tilemap
-00009e1a T frame68
-00009e26 t frame69_tileset
-00009e2e t frame69_tilemap
-00009e38 T frame69
-00009e44 t frame70_tileset
-00009e4c t frame70_tilemap
-00009e56 T frame70
-00009e62 t frame71_tileset
-00009e6a t frame71_tilemap
-00009e74 T frame71
-00009e80 t frame72_tileset
-00009e88 t frame72_tilemap
-00009e92 T frame72
-00009e9e t frame73_tileset
-00009ea6 t frame73_tilemap
-00009eb0 T frame73
-00009ebc t frame74_tileset
-00009ec4 t frame74_tilemap
-00009ece T frame74
-00009eda t frame75_tileset
-00009ee2 t frame75_tilemap
-00009eec T frame75
-00009ef8 t frame76_tileset
-00009f00 t frame76_tilemap
-00009f0a t frame76_palette
-00009f10 T frame76
-00009f1c t frame77_tileset
-00009f24 t frame77_tilemap
-00009f2e T frame77
-00009f3a t frame78_tileset
-00009f42 t frame78_tilemap
-00009f4c T frame78
-00009f58 t frame79_tileset
-00009f60 t frame79_tilemap
-00009f6a T frame79
-00009f76 t frame80_tileset
-00009f7e T frame80
-00009f8a t frame81_tileset
-00009f92 t frame81_tilemap
-00009f9c T frame81
-00009fa8 t frame82_tileset
-00009fb0 T frame82
-00009fbc t frame83_tileset
-00009fc4 t frame83_tilemap
-00009fce T frame83
-00009fda t frame84_tileset
-00009fe2 t frame84_tilemap
-00009fec T frame84
-00009ff8 t frame85_tileset
-0000a000 t frame85_tilemap
-0000a00a t frame85_palette
-0000a010 T frame85
-0000a01c t frame86_tileset
-0000a024 t frame86_tilemap
-0000a02e T frame86
-0000a03a t frame87_tileset
-0000a042 t frame87_tilemap
-0000a04c T frame87
-0000a058 t frame88_tileset
-0000a060 t frame88_tilemap
-0000a06a T frame88
-0000a076 t frame89_tileset
-0000a07e t frame89_tilemap
-0000a088 T frame89
-0000a094 t frame90_tileset
-0000a09c t frame90_tilemap
-0000a0a6 T frame90
-0000a0b2 t frame91_tileset
-0000a0ba T frame91
-0000a0c6 t frame92_tileset
-0000a0ce t frame92_tilemap
-0000a0d8 T frame92
-0000a0e4 T frame93
-0000a0f0 t frame94_tileset
-0000a0f8 T frame94
-0000a104 t frame95_tileset
-0000a10c T frame95
-0000a118 t frame96_tileset
-0000a120 t frame96_tilemap
-0000a12a T frame96
-0000a136 t frame97_tileset
-0000a13e t frame97_tilemap
-0000a148 T frame97
-0000a154 t frame98_tileset
-0000a15c t frame98_tilemap
-0000a166 T frame98
-0000a172 t frame99_tileset
-0000a17a t frame99_tilemap
-0000a184 T frame99
-0000a190 t frame100_tileset
-0000a198 t frame100_tilemap
-0000a1a2 T frame100
-0000a1ae t frame101_tileset
-0000a1b6 t frame101_tilemap
-0000a1c0 T frame101
-0000a1cc t frame102_tileset
-0000a1d4 t frame102_tilemap
-0000a1de T frame102
-0000a1ea t frame103_tileset
-0000a1f2 t frame103_tilemap
-0000a1fc T frame103
-0000a208 t frame104_tileset
-0000a210 t frame104_tilemap
-0000a21a t frame104_palette
-0000a220 T frame104
-0000a22c t frame105_tileset
-0000a234 t frame105_tilemap
-0000a23e T frame105
-0000a24a t frame106_tileset
-0000a252 t frame106_tilemap
-0000a25c t frame106_palette
-0000a262 T frame106
-0000a26e t frame107_tileset
-0000a276 t frame107_tilemap
-0000a280 T frame107
-0000a28c t frame108_tileset
-0000a294 T frame108
-0000a2a0 t frame109_tileset
-0000a2a8 T frame109
-0000a2b4 t frame110_tileset
-0000a2bc t frame110_tilemap
-0000a2c6 T frame110
-0000a2d2 t frame111_tileset
-0000a2da t frame111_tilemap
-0000a2e4 T frame111
-0000a2f0 t frame112_tileset
-0000a2f8 t frame112_tilemap
-0000a302 T frame112
-0000a30e t frame113_tileset
-0000a316 t frame113_tilemap
-0000a320 T frame113
-0000a32c t frame114_tileset
-0000a334 t frame114_tilemap
-0000a33e T frame114
-0000a34a t frame115_tileset
-0000a352 t frame115_tilemap
-0000a35c T frame115
-0000a368 t frame116_tileset
-0000a370 t frame116_tilemap
-0000a37a T frame116
-0000a386 t frame117_tileset
-0000a38e t frame117_tilemap
-0000a398 t frame117_palette
-0000a39e T frame117
-0000a3aa t frame118_tileset
-0000a3b2 t frame118_tilemap
-0000a3bc t frame118_palette
-0000a3c2 T frame118
-0000a3ce t frame119_tileset
-0000a3d6 t frame119_tilemap
-0000a3e0 T frame119
-0000a3ec t frame120_tileset
-0000a3f4 t frame120_tilemap
-0000a3fe T frame120
-0000a40a t frame121_tileset
-0000a412 t frame121_tilemap
-0000a41c T frame121
-0000a428 t frame122_tileset
-0000a430 t frame122_tilemap
-0000a43a T frame122
-0000a446 t frame123_tileset
-0000a44e t frame123_tilemap
-0000a458 T frame123
-0000a464 t frame124_tileset
-0000a46c t frame124_tilemap
-0000a476 T frame124
-0000a482 t frame125_tileset
-0000a48a t frame125_tilemap
-0000a494 T frame125
-0000a4a0 t frame126_tileset
-0000a4a8 t frame126_tilemap
-0000a4b2 T frame126
-0000a4be t frame127_tileset
-0000a4c6 t frame127_tilemap
-0000a4d0 T frame127
-0000a4dc t frame128_tileset
-0000a4e4 t frame128_tilemap
-0000a4ee T frame128
-0000a4fa t frame129_tileset
-0000a502 t frame129_tilemap
-0000a50c T frame129
-0000a518 t frame130_tileset
-0000a520 t frame130_tilemap
-0000a52a T frame130
-0000a536 t frame131_tileset
-0000a53e t frame131_tilemap
-0000a548 T frame131
-0000a554 t frame132_tileset
-0000a55c t frame132_tilemap
-0000a566 T frame132
-0000a572 t frame133_tileset
-0000a57a t frame133_tilemap
-0000a584 T frame133
-0000a590 t frame134_tileset
-0000a598 t frame134_tilemap
-0000a5a2 T frame134
-0000a5ae t frame135_tileset
-0000a5b6 t frame135_tilemap
-0000a5c0 T frame135
-0000a5cc t frame136_tileset
-0000a5d4 t frame136_tilemap
-0000a5de T frame136
-0000a5ea t frame137_tileset
-0000a5f2 t frame137_tilemap
-0000a5fc T frame137
-0000a608 t frame138_tileset
-0000a610 t frame138_tilemap
-0000a61a T frame138
-0000a626 t frame139_tileset
-0000a62e t frame139_tilemap
-0000a638 T frame139
-0000a644 t frame140_tileset
-0000a64c t frame140_tilemap
-0000a656 T frame140
-0000a662 t frame141_tileset
-0000a66a t frame141_tilemap
-0000a674 T frame141
-0000a680 t frame142_tileset
-0000a688 t frame142_tilemap
-0000a692 T frame142
-0000a69e t frame143_tileset
-0000a6a6 t frame143_tilemap
-0000a6b0 T frame143
-0000a6bc t frame144_tileset
-0000a6c4 t frame144_tilemap
-0000a6ce T frame144
-0000a6da t frame145_tileset
-0000a6e2 t frame145_tilemap
-0000a6ec T frame145
-0000a6f8 t frame146_tileset
-0000a700 t frame146_tilemap
-0000a70a T frame146
-0000a716 t frame147_tileset
-0000a71e t frame147_tilemap
-0000a728 T frame147
-0000a734 t frame148_tileset
-0000a73c t frame148_tilemap
-0000a746 T frame148
-0000a752 t frame149_tileset
-0000a75a t frame149_tilemap
-0000a764 T frame149
-0000a770 t frame150_tileset
-0000a778 t frame150_tilemap
-0000a782 T frame150
-0000a78e t frame151_tileset
-0000a796 t frame151_tilemap
-0000a7a0 T frame151
-0000a7ac t frame152_tileset
-0000a7b4 t frame152_tilemap
-0000a7be T frame152
-0000a7ca t frame153_tileset
-0000a7d2 t frame153_tilemap
-0000a7dc t frame153_palette
-0000a7e2 T frame153
-0000a7ee t frame154_tileset
-0000a7f6 t frame154_tilemap
-0000a800 T frame154
-0000a80c t frame155_tileset
-0000a814 t frame155_tilemap
-0000a81e T frame155
-0000a82a t frame156_tileset
-0000a832 t frame156_tilemap
-0000a83c T frame156
-0000a848 t frame157_tileset
-0000a850 t frame157_tilemap
-0000a85a T frame157
-0000a866 t frame158_tileset
-0000a86e t frame158_tilemap
-0000a878 t frame158_palette
-0000a87e T frame158
-0000a88a t frame159_tileset
-0000a892 t frame159_tilemap
-0000a89c t frame159_palette
-0000a8a2 T frame159
-0000a8ae t frame160_tileset
-0000a8b6 t frame160_tilemap
-0000a8c0 t frame160_palette
-0000a8c6 T frame160
-0000a8d2 t frame161_tileset
-0000a8da t frame161_tilemap
-0000a8e4 t frame161_palette
-0000a8ea T frame161
-0000a8f6 t frame162_tileset
-0000a8fe t frame162_tilemap
-0000a908 t frame162_palette
-0000a90e T frame162
-0000a91a t frame163_tileset
-0000a922 t frame163_tilemap
-0000a92c t frame163_palette
-0000a932 T frame163
-0000a93e t frame164_tileset
-0000a946 t frame164_tilemap
-0000a950 t frame164_palette
-0000a956 T frame164
-0000a962 t frame165_tileset
-0000a96a t frame165_tilemap
-0000a974 t frame165_palette
-0000a97a T frame165
-0000a986 t frame166_tileset
-0000a98e t frame166_tilemap
-0000a998 t frame166_palette
-0000a99e T frame166
-0000a9aa t frame167_tileset
-0000a9b2 t frame167_tilemap
-0000a9bc t frame167_palette
-0000a9c2 T frame167
-0000a9ce t frame168_tileset
-0000a9d6 t frame168_tilemap
-0000a9e0 t frame168_palette
-0000a9e6 T frame168
-0000a9f2 t frame169_tileset
-0000a9fa t frame169_tilemap
-0000aa04 t frame169_palette
-0000aa0a T frame169
-0000aa16 t frame170_tileset
-0000aa1e t frame170_tilemap
-0000aa28 T frame170
-0000aa34 t frame171_tileset
-0000aa3c t frame171_tilemap
-0000aa46 T frame171
-0000aa52 t frame172_tileset
-0000aa5a t frame172_tilemap
-0000aa64 T frame172
-0000aa70 t frame173_tileset
-0000aa78 t frame173_tilemap
-0000aa82 t frame173_palette
-0000aa88 T frame173
-0000aa94 t frame174_tileset
-0000aa9c t frame174_tilemap
-0000aaa6 T frame174
-0000aab2 t frame175_tileset
-0000aaba t frame175_tilemap
-0000aac4 T frame175
-0000aad0 t frame176_tileset
-0000aad8 t frame176_tilemap
-0000aae2 T frame176
-0000aaee t frame177_tileset
-0000aaf6 t frame177_tilemap
-0000ab00 T frame177
-0000ab0c T frame178
-0000ab18 T intro_pal
-0000ac86 T palette_blue	C:/SGDK/src/pal.c:163
-0000aca6 T palette_green	C:/SGDK/src/pal.c:142
-0000acc6 T palette_red	C:/SGDK/src/pal.c:121
-0000ace6 T palette_grey	C:/SGDK/src/pal.c:100
-0000ad06 T palette_black_all	C:/SGDK/src/pal.c:25
-0000ad8d t digits	C:/SGDK/src/string.c:26
-0000ae56 t lowercase_hexchars	C:/SGDK/src/string.c:24
-0000ae67 t uppercase_hexchars	C:/SGDK/src/string.c:23
-0000afce T psgVolTable	C:/SGDK/src/snd/xgm2.c:148
-0000b032 T fmVolTable	C:/SGDK/src/snd/xgm2.c:133
-0000b096 T tab_vol	C:/SGDK/src/snd/pcm/tab_vol.c:4
-0000c096 t sgdk_logo_palette
-0000c09c T sgdk_logo
-0000c0aa T font_default
-0000c0b2 T font_pal_default
-0000c0b8 T drv_null
-0000c0f2 T drv_xgm
-0000d7f2 T drv_dpcm2
-0000e5f2 T drv_pcm
-0000f122 T drv_pcm4
-0000fb90 T drv_xgm2
-00011b90 t xlt_all.0	C:/SGDK/src/joy.c:846
-00011ba0 t xlt.1	C:/SGDK/src/joy.c:970
-00011c30 T __INIT_SECTION__
-00011c32 T __FINI_SECTION__
-00011c34 T _etext
-00011c34 t frame1_palette_data
-00011cb4 t frame17_palette_data
-00011d34 t frame33_palette_data
-00011db4 t frame37_palette_data
-00011e34 t frame41_palette_data
-00011eb4 t frame49_palette_data
-00011f34 t frame76_palette_data
-00011fb4 t frame85_palette_data
-00012034 t frame104_palette_data
-000120b4 t frame106_palette_data
-00012134 t frame117_palette_data
-000121b4 t frame118_palette_data
-00012234 t frame153_palette_data
-000122b4 t frame158_palette_data
-00012334 t frame159_palette_data
-000123b4 t frame160_palette_data
-00012434 t frame161_palette_data
-000124b4 t frame162_palette_data
-00012534 t frame163_palette_data
-000125b4 t frame164_palette_data
-00012634 t frame165_palette_data
-000126b4 t frame166_palette_data
-00012734 t frame167_palette_data
-000127b4 t frame168_palette_data
-00012834 t frame169_palette_data
-000128b4 t frame173_palette_data
-00012934 t intro_pal_data
-000129b4 t sgdk_logo_palette_data
-000129d4 t font_pal_default_data
-000129f4 T stop_xgm
-00012aa0 t font_default_data
-00012d02 t sgdk_logo_data
-0001313c t frame1_tilemap_data
-000133e4 t frame2_tilemap_data
-00013556 t frame3_tilemap_data
-0001362e t frame4_tilemap_data
-0001371a t frame5_tilemap_data
-000137e6 t frame6_tilemap_data
-000138be t frame7_tilemap_data
-00013994 t frame8_tilemap_data
-00013a62 t frame9_tilemap_data
-00013b2e t frame10_tilemap_data
-00013c00 t frame11_tilemap_data
-00013cd2 t frame12_tilemap_data
-00013d9c t frame13_tilemap_data
-00013e6e t frame14_tilemap_data
-00013f3e t frame15_tilemap_data
-00014006 t frame16_tilemap_data
-000140d0 t frame17_tilemap_data
-00014186 t frame33_tilemap_data
-00014252 t frame34_tilemap_data
-0001431c t frame35_tilemap_data
-000143da t frame36_tilemap_data
-00014498 t frame37_tilemap_data
-0001454c t frame38_tilemap_data
-000145fa t frame39_tilemap_data
-000146ae t frame40_tilemap_data
-00014764 t frame41_tilemap_data
-00014870 t frame42_tilemap_data
-00014980 t frame43_tilemap_data
-00014a8a t frame44_tilemap_data
-00014b6e t frame45_tilemap_data
-00014c3e t frame46_tilemap_data
-00014d12 t frame47_tilemap_data
-00014de2 t frame48_tilemap_data
-00014ea8 t frame49_tilemap_data
-00014f6e t frame50_tilemap_data
-00015048 t frame51_tilemap_data
-00015118 t frame52_tilemap_data
-00015230 t frame53_tilemap_data
-00015344 t frame54_tilemap_data
-0001544e t frame55_tilemap_data
-00015556 t frame56_tilemap_data
-0001563e t frame57_tilemap_data
-0001571c t frame58_tilemap_data
-0001581e t frame59_tilemap_data
-000158f0 t frame60_tilemap_data
-000159b4 t frame61_tilemap_data
-00015ac6 t frame62_tilemap_data
-00015bac t frame63_tilemap_data
-00015ca4 t frame64_tilemap_data
-00015d80 t frame65_tilemap_data
-00015e44 t frame66_tilemap_data
-00015f2c t frame67_tilemap_data
-00016018 t frame68_tilemap_data
-000160e0 t frame69_tilemap_data
-000161be t frame70_tilemap_data
-0001628e t frame71_tilemap_data
-00016370 t frame72_tilemap_data
-0001646c t frame73_tilemap_data
-00016570 t frame74_tilemap_data
-0001662c t frame75_tilemap_data
-000166f2 t frame76_tilemap_data
-000167ca t frame77_tilemap_data
-000168c0 t frame78_tilemap_data
-000169b6 t frame79_tilemap_data
-00016ab0 t frame81_tilemap_data
-00016ba6 t frame83_tilemap_data
-00016c9e t frame84_tilemap_data
-00016d96 t frame85_tilemap_data
-00016e58 t frame86_tilemap_data
-00016f1c t frame87_tilemap_data
-00016fde t frame88_tilemap_data
-0001709a t frame89_tilemap_data
-0001715a t frame90_tilemap_data
-00017214 t frame92_tilemap_data
-000172c4 t frame96_tilemap_data
-00017376 t frame97_tilemap_data
-0001745a t frame98_tilemap_data
-00017538 t frame99_tilemap_data
-00017650 t frame100_tilemap_data
-00017786 t frame101_tilemap_data
-0001789a t frame102_tilemap_data
-00017954 t frame103_tilemap_data
-00017a0e t frame104_tilemap_data
-00017ae8 t frame105_tilemap_data
-00017bd6 t frame106_tilemap_data
-00017cd6 t frame107_tilemap_data
-00017de4 t frame110_tilemap_data
-00017eec t frame111_tilemap_data
-00017ff4 t frame112_tilemap_data
-000180ee t frame113_tilemap_data
-000181ac t frame114_tilemap_data
-0001825c t frame115_tilemap_data
-0001837c t frame116_tilemap_data
-0001843a t frame117_tilemap_data
-000184ec t frame118_tilemap_data
-000184fa t frame119_tilemap_data
-000185d0 t frame120_tilemap_data
-0001869c t frame121_tilemap_data
-00018760 t frame122_tilemap_data
-0001882c t frame123_tilemap_data
-00018912 t frame124_tilemap_data
-000189f2 t frame125_tilemap_data
-00018ad8 t frame126_tilemap_data
-00018bb6 t frame127_tilemap_data
-00018cbc t frame128_tilemap_data
-00018db4 t frame129_tilemap_data
-00018e88 t frame130_tilemap_data
-00018f70 t frame131_tilemap_data
-00019048 t frame132_tilemap_data
-00019122 t frame133_tilemap_data
-000191e8 t frame134_tilemap_data
-000192ca t frame135_tilemap_data
-00019390 t frame136_tilemap_data
-0001946c t frame137_tilemap_data
-0001956e t frame138_tilemap_data
-0001964e t frame139_tilemap_data
-0001976a t frame140_tilemap_data
-0001987a t frame141_tilemap_data
-000199fc t frame142_tilemap_data
-00019b66 t frame143_tilemap_data
-00019cd0 t frame144_tilemap_data
-00019e40 t frame145_tilemap_data
-00019f90 t frame146_tilemap_data
-0001a0dc t frame147_tilemap_data
-0001a1d4 t frame148_tilemap_data
-0001a2a8 t frame149_tilemap_data
-0001a376 t frame150_tilemap_data
-0001a44c t frame151_tilemap_data
-0001a528 t frame152_tilemap_data
-0001a622 t frame153_tilemap_data
-0001a70e t frame154_tilemap_data
-0001a830 t frame155_tilemap_data
-0001a9be t frame156_tilemap_data
-0001ab58 t frame157_tilemap_data
-0001acd2 t frame158_tilemap_data
-0001addc t frame159_tilemap_data
-0001ae90 t frame160_tilemap_data
-0001af4c t frame161_tilemap_data
-0001affe t frame162_tilemap_data
-0001b0b0 t frame163_tilemap_data
-0001b172 t frame164_tilemap_data
-0001b404 t frame165_tilemap_data
-0001b586 t frame166_tilemap_data
-0001b6e4 t frame167_tilemap_data
-0001b84e t frame168_tilemap_data
-0001ba26 t frame169_tilemap_data
-0001bbe0 t frame170_tilemap_data
-0001bd44 t frame171_tilemap_data
-0001bec8 t frame172_tilemap_data
-0001c03a t frame173_tilemap_data
-0001c18e t frame174_tilemap_data
-0001c2c4 t frame175_tilemap_data
-0001c418 t frame176_tilemap_data
-0001c58e t frame177_tilemap_data
-0001c6e4 t frame1_tileset_data
-0001e132 t frame2_tileset_data
-00020158 t frame3_tileset_data
-0002233e t frame4_tileset_data
-0002436e t frame5_tileset_data
-0002640e t frame6_tileset_data
-000285e0 t frame7_tileset_data
-0002a75c t frame8_tileset_data
-0002ca0c t frame9_tileset_data
-0002ec4a t frame10_tileset_data
-00030e10 t frame11_tileset_data
-00032f58 t frame12_tileset_data
-000350ea t frame13_tileset_data
-000371fe t frame14_tileset_data
-00039066 t frame15_tileset_data
-0003aea6 t frame16_tileset_data
-0003cbbe t frame17_tileset_data
-0003f826 t frame18_tileset_data
-00041fe6 t frame19_tileset_data
-00044aa4 t frame20_tileset_data
-00047592 t frame21_tileset_data
-00049ed6 t frame22_tileset_data
-0004c40e t frame23_tileset_data
-0004edf0 t frame24_tileset_data
-000512d2 t frame25_tileset_data
-00053734 t frame26_tileset_data
-00054100 A snd_intro_size
-00055eaa t frame27_tileset_data
-000581e2 t frame28_tileset_data
-0005a198 t frame29_tileset_data
-0005c802 t frame30_tileset_data
-0005f2c8 t frame31_tileset_data
-00061dee t frame32_tileset_data
-000644b8 t frame33_tileset_data
-00066728 t frame34_tileset_data
-00068946 t frame35_tileset_data
-0006b06e t frame36_tileset_data
-0006d478 t frame37_tileset_data
-0006ff9c t frame38_tileset_data
-00072bee t frame39_tileset_data
-0007595c t frame40_tileset_data
-00078710 t frame41_tileset_data
-0007a172 t frame42_tileset_data
-0007bcbe t frame43_tileset_data
-0007dd56 t frame44_tileset_data
-000800fa t frame45_tileset_data
-00082628 t frame46_tileset_data
-00084c10 t frame47_tileset_data
-00086fe2 t frame48_tileset_data
-000896f4 t frame49_tileset_data
-0008b698 t frame50_tileset_data
-0008d3e6 t frame51_tileset_data
-0008f024 t frame52_tileset_data
-000908a2 t frame53_tileset_data
-000921ce t frame54_tileset_data
-00093b02 t frame55_tileset_data
-00095702 t frame56_tileset_data
-00097648 t frame57_tileset_data
-00099a70 t frame58_tileset_data
-0009bc90 t frame59_tileset_data
-0009dac2 t frame60_tileset_data
-0009ea40 t frame61_tileset_data
-000a05ee t frame62_tileset_data
-000a232a t frame63_tileset_data
-000a3dc8 t frame64_tileset_data
-000a629e t frame65_tileset_data
-000a88ba t frame66_tileset_data
-000aaa36 t frame67_tileset_data
-000ac948 t frame68_tileset_data
-000ae870 t frame69_tileset_data
-000b06f0 t frame70_tileset_data
-000b23aa t frame71_tileset_data
-000b4402 t frame72_tileset_data
-000b5cee t frame73_tileset_data
-000b7534 t frame74_tileset_data
-000ba028 t frame75_tileset_data
-000bca28 t frame76_tileset_data
-000bce20 t frame77_tileset_data
-000beef6 t frame78_tileset_data
-000c0f64 t frame79_tileset_data
-000c25c6 t frame80_tileset_data
-000c3aae t frame81_tileset_data
-000c5060 t frame82_tileset_data
-000c6580 t frame83_tileset_data
-000c796c t frame84_tileset_data
-000c9498 t frame85_tileset_data
-000cbf0c t frame86_tileset_data
-000ce6d6 t frame87_tileset_data
-000d065c t frame88_tileset_data
-000d2b0e t frame89_tileset_data
-000d501e t frame90_tileset_data
-000d7b1a t frame91_tileset_data
-000da97a t frame92_tileset_data
-000dd7f2 t frame94_tileset_data
-000dff9a t frame95_tileset_data
-000e2092 t frame96_tileset_data
-000e4e90 t frame97_tileset_data
-000e6bec t frame98_tileset_data
-000e8a8c t frame99_tileset_data
-000ea730 t frame100_tileset_data
-000ec79c t frame101_tileset_data
-000ee5d6 t frame102_tileset_data
-000f1234 t frame103_tileset_data
-000f3ed4 t frame104_tileset_data
-000f6052 t frame105_tileset_data
-000f7cc8 t frame106_tileset_data
-000f9800 t frame107_tileset_data
-000fb0dc t frame108_tileset_data
-000fc122 t frame109_tileset_data
-000fd0c6 t frame110_tileset_data
-000fe340 t frame111_tileset_data
-000ff3ea t frame112_tileset_data
-0010049c t frame113_tileset_data
-0010314c t frame114_tileset_data
-0010611a t frame115_tileset_data
-0010827c t frame116_tileset_data
-0010a5f8 t frame117_tileset_data
-0010c96a t frame118_tileset_data
-0010c98a t frame119_tileset_data
-0010d498 t frame120_tileset_data
-0010f3b4 t frame121_tileset_data
-00111634 t frame122_tileset_data
-001137f6 t frame123_tileset_data
-001159aa t frame124_tileset_data
-00117bbe t frame125_tileset_data
-00119d0c t frame126_tileset_data
-0011bd3c t frame127_tileset_data
-0011da92 t frame128_tileset_data
-0011f8ea t frame129_tileset_data
-001216fe t frame130_tileset_data
-001237f6 t frame131_tileset_data
-00125756 t frame132_tileset_data
-00127566 t frame133_tileset_data
-001297d8 t frame134_tileset_data
-0012ba0a t frame135_tileset_data
-0012dd4a t frame136_tileset_data
-0012ff64 t frame137_tileset_data
-00131bba t frame138_tileset_data
-00133630 t frame139_tileset_data
-00134db8 t frame140_tileset_data
-00136172 t frame141_tileset_data
-0013761a t frame142_tileset_data
-00138b38 t frame143_tileset_data
-00139e9e t frame144_tileset_data
-0013b28a t frame145_tileset_data
-0013bf2c t frame146_tileset_data
-0013d44c t frame147_tileset_data
-0013f02c t frame148_tileset_data
-001413d2 t frame149_tileset_data
-001438ee t frame150_tileset_data
-001460a0 t frame151_tileset_data
-001488d2 t frame152_tileset_data
-0014a0ac t frame153_tileset_data
-0014afba t frame154_tileset_data
-0014c390 t frame155_tileset_data
-0014d5ee t frame156_tileset_data
-0014ef9c t frame157_tileset_data
-00150c36 t frame158_tileset_data
-00152c02 t frame159_tileset_data
-00155932 t frame160_tileset_data
-00158836 t frame161_tileset_data
-0015ba96 t frame162_tileset_data
-0015ed16 t frame163_tileset_data
-00161c78 t frame164_tileset_data
-00163860 t frame165_tileset_data
-00165254 t frame166_tileset_data
-001669b0 t frame167_tileset_data
-0016836e t frame168_tileset_data
-0016a39a t frame169_tileset_data
-0016ad86 t frame170_tileset_data
-0016ca74 t frame171_tileset_data
-0016e804 t frame172_tileset_data
-00170878 t frame173_tileset_data
-00172392 t frame174_tileset_data
-001748da t frame175_tileset_data
-001767ac t frame176_tileset_data
-001785e8 t frame177_tileset_data
-00178de0 A _stext
-e0ff0000 D introImpar	C:\Users\Vagno\Desktop\IntroAnimada-main/src/main.c:26
-e0ff0164 D introPar	C:\Users\Vagno\Desktop\IntroAnimada-main/src/main.c:11
-e0ff02c8 D task_sr
-e0ff02ca D task_pc
-e0ff02ce D task_regs
-e0ff030a D task_lock
-e0ff030c d randbase	C:/SGDK/src/tools.c:25
-e0ff030e D _edata
-e0ff030e B _start
-e0ff030e B palette_full	C:\Users\Vagno\Desktop\IntroAnimada-main/src/main.c:8
-e0ff038e b phase	C:/SGDK/src/bmp.c:68
-e0ff0390 b queueTransferSize	C:/SGDK/src/dma.c:41
-e0ff0392 b queueIndexLimit	C:/SGDK/src/dma.c:40
-e0ff0394 b queueIndex	C:/SGDK/src/dma.c:39
-e0ff0396 b dataBufferSize	C:/SGDK/src/dma.c:36
-e0ff0398 b flag	C:/SGDK/src/dma.c:33
-e0ff039a b maxTransferPerFrame	C:/SGDK/src/dma.c:32
-e0ff039c b queueSize	C:/SGDK/src/dma.c:31
-e0ff039e b nextDataBuffer	C:/SGDK/src/dma.c:28
-e0ff03a2 B dmaDataBuffer	C:/SGDK/src/dma.c:27
-e0ff03a6 B dmaQueues	C:/SGDK/src/dma.c:24
-e0ff03aa b heap	C:/SGDK/src/memory.c:153
-e0ff03ae b free	C:/SGDK/src/memory.c:152
-e0ff03b2 b fadeCounter	C:/SGDK/src/pal.c:201
-e0ff03b4 b fadeSize	C:/SGDK/src/pal.c:200
-e0ff03b6 b fadeInd	C:/SGDK/src/pal.c:199
-e0ff03b8 b fadeSB	C:/SGDK/src/pal.c:197
-e0ff0438 b fadeSG	C:/SGDK/src/pal.c:196
-e0ff04b8 b fadeSR	C:/SGDK/src/pal.c:195
-e0ff0538 b fadeB	C:/SGDK/src/pal.c:194
-e0ff05b8 b fadeG	C:/SGDK/src/pal.c:193
-e0ff0638 b fadeR	C:/SGDK/src/pal.c:192
-e0ff06b8 B fadeEndPal	C:/SGDK/src/pal.c:190
-e0ff0738 B fadeCurrentPal	C:/SGDK/src/pal.c:189
-e0ff07b8 b lastVTimer.0	C:/SGDK/src/sys.c:979
-e0ff07ba b lastSubTick	C:/SGDK/src/sys.c:122
-e0ff07be b frameCnt	C:/SGDK/src/sys.c:121
-e0ff07c2 b cpuFrameLoad	C:/SGDK/src/sys.c:120
-e0ff07c4 b frameLoadIndex	C:/SGDK/src/sys.c:119
-e0ff07c6 b frameLoads	C:/SGDK/src/sys.c:118
-e0ff07d6 b flags	C:/SGDK/src/sys.c:115
-e0ff07d8 b disableIntStack	C:/SGDK/src/sys.c:114
-e0ff07da B intLevelSave	C:/SGDK/src/sys.c:113
-e0ff07dc B intTrace	C:/SGDK/src/sys.c:110
-e0ff07de B VBlankProcess	C:/SGDK/src/sys.c:109
-e0ff07e0 B vblankCB	C:/SGDK/src/sys.c:107
-e0ff07e4 B intCB	C:/SGDK/src/sys.c:104
-e0ff07e8 B eintCB	C:/SGDK/src/sys.c:103
-e0ff07ec B hintCaller	C:/SGDK/src/sys.c:102
-e0ff07f2 B vintCB	C:/SGDK/src/sys.c:101
-e0ff07f6 b lastTick	C:/SGDK/src/timer.c:39
-e0ff07fa B vtimer	C:/SGDK/src/timer.c:36
-e0ff07fe B randomSeedSet	C:/SGDK/src/tools.c:27
-e0ff0800 B lastVCnt	C:/SGDK/src/vdp.c:62
-e0ff0802 B windowWidthSft	C:/SGDK/src/vdp.c:60
-e0ff0804 B planeHeightSft	C:/SGDK/src/vdp.c:59
-e0ff0806 B planeWidthSft	C:/SGDK/src/vdp.c:58
-e0ff0808 B windowWidth	C:/SGDK/src/vdp.c:57
-e0ff080a B planeHeight	C:/SGDK/src/vdp.c:56
-e0ff080c B planeWidth	C:/SGDK/src/vdp.c:55
-e0ff080e B screenHeight	C:/SGDK/src/vdp.c:54
-e0ff0810 B screenWidth	C:/SGDK/src/vdp.c:53
-e0ff0812 B userTileMaxIndex	C:/SGDK/src/vdp.c:51
-e0ff0814 B maps_addr	C:/SGDK/src/vdp.c:49
-e0ff0816 B slist_addr	C:/SGDK/src/vdp.c:48
-e0ff0818 B hscrl_addr	C:/SGDK/src/vdp.c:47
-e0ff081a B bgb_addr	C:/SGDK/src/vdp.c:46
-e0ff081c B bga_addr	C:/SGDK/src/vdp.c:45
-e0ff081e B window_addr	C:/SGDK/src/vdp.c:44
-e0ff0820 b regValues	C:/SGDK/src/vdp.c:42
-e0ff0833 b vscroll_update	C:/SGDK/src/vdp_bg.c:31
-e0ff0834 b hscroll_update	C:/SGDK/src/vdp_bg.c:30
-e0ff0836 b vscroll	C:/SGDK/src/vdp_bg.c:29
-e0ff083a b hscroll	C:/SGDK/src/vdp_bg.c:28
-e0ff083e B curTileInd	C:/SGDK/src/vdp_bg.c:26
-e0ff0840 b text_basetile	C:/SGDK/src/vdp_bg.c:23
-e0ff0842 b text_plan	C:/SGDK/src/vdp_bg.c:22
-e0ff0846 b free	C:/SGDK/src/vdp_spr.c:24
-e0ff084a b allocStack	C:/SGDK/src/vdp_spr.c:22
-e0ff098a B highestVDPSpriteIndex	C:/SGDK/src/vdp_spr.c:19
-e0ff098c B vdpSpriteCache	C:/SGDK/src/vdp_spr.c:14
-e0ff0c8c B busProtectSignalAddress	C:/SGDK/src/z80_ctrl.c:24
-e0ff0c8e B driverFlags	C:/SGDK/src/z80_ctrl.c:23
-e0ff0c90 B currentDriver	C:/SGDK/src/z80_ctrl.c:22
-e0ff0c92 b xgmWaitMean	C:/SGDK/src/snd/xgm.c:41
-e0ff0c94 b xgmIdleMean	C:/SGDK/src/snd/xgm.c:40
-e0ff0c96 b xgmTabInd	C:/SGDK/src/snd/xgm.c:39
-e0ff0c98 b xgmWaitTab	C:/SGDK/src/snd/xgm.c:38
-e0ff0cd8 b xgmIdleTab	C:/SGDK/src/snd/xgm.c:37
-e0ff0d18 B xgmTempoCnt	C:/SGDK/src/snd/xgm.c:34
-e0ff0d1a b xgmTempoDef	C:/SGDK/src/snd/xgm.c:32
-e0ff0d1c b xgmTempo	C:/SGDK/src/snd/xgm.c:31
-e0ff0d1e b xgm2WaitMean	C:/SGDK/src/snd/xgm2.c:191
-e0ff0d20 b xgm2IdleMean	C:/SGDK/src/snd/xgm2.c:190
-e0ff0d22 b xgm2WaitTabInd	C:/SGDK/src/snd/xgm2.c:189
-e0ff0d24 b xgm2IdleTabInd	C:/SGDK/src/snd/xgm2.c:188
-e0ff0d26 b xgm2WaitTab	C:/SGDK/src/snd/xgm2.c:187
-e0ff0d2e b xgm2IdleTab	C:/SGDK/src/snd/xgm2.c:186
-e0ff0d36 b fadeEndProcess	C:/SGDK/src/snd/xgm2.c:183
-e0ff0d3a b fadeCount	C:/SGDK/src/snd/xgm2.c:182
-e0ff0d3c b fadePSGVolStep	C:/SGDK/src/snd/xgm2.c:181
-e0ff0d3e b fadeFMVolStep	C:/SGDK/src/snd/xgm2.c:180
-e0ff0d40 b fadePSGVol	C:/SGDK/src/snd/xgm2.c:179
-e0ff0d42 b fadeFMVol	C:/SGDK/src/snd/xgm2.c:178
-e0ff0d44 b restoreVolume	C:/SGDK/src/snd/xgm2.c:175
-e0ff0d46 b psgVol	C:/SGDK/src/snd/xgm2.c:174
-e0ff0d48 b fmVol	C:/SGDK/src/snd/xgm2.c:173
-e0ff0d4a b xgm2Tempo	C:/SGDK/src/snd/xgm2.c:170
-e0ff0d4c b joyEventCB	C:/SGDK/src/joy.c:47
-e0ff0d50 b gport	C:/SGDK/src/joy.c:44
-e0ff0d52 b extSet	C:/SGDK/src/joy.c:43
-e0ff0d53 b gun	C:/SGDK/src/joy.c:42
-e0ff0d54 b phase	C:/SGDK/src/joy.c:40
-e0ff0d55 b retry	C:/SGDK/src/joy.c:39
-e0ff0d56 b portType	C:/SGDK/src/joy.c:37
-e0ff0d58 b portSupport	C:/SGDK/src/joy.c:36
-e0ff0d5a b joyAxisY	C:/SGDK/src/joy.c:34
-e0ff0d6a b joyAxisX	C:/SGDK/src/joy.c:33
-e0ff0d7a b joyState	C:/SGDK/src/joy.c:32
-e0ff0d8a b joyType	C:/SGDK/src/joy.c:31
-e0ff0d92 B spriteVramSize	C:/SGDK/src/sprite_eng.c:90
-e0ff0d94 b vram	C:/SGDK/src/sprite_eng.c:87
-e0ff0da0 B firstSprite	C:/SGDK/src/sprite_eng.c:83
-e0ff0da4 B spritesPool	C:/SGDK/src/sprite_eng.c:80
-e0ff0da8 B _bend
+000036f8 t readTrackball
+0000392c t SPR_defragVRAM
+000039b0 t YM2612_reset
+00003dbc t setNextXFrame.constprop.0
+00003e0a t DMA_initEx.constprop.0
+00003e86 t VDP_setTileMapDataEx.constprop.0
+00003f5a t PAL_doFadeStep
+00004068 t setTileMapDataRowEx.constprop.1
+00004194 t VDP_drawText
+000042f0 t setTileMapDataColumnEx.constprop.0
+00004444 t VDP_setTileMapDataRectEx.constprop.0
+000047ba t SYS_enableInts
+000047e8 t SYS_disableInts
+0000481a t Z80_clear
+000048dc t Z80_upload
+000049f6 t Z80_loadDriverInternal
+00004b06 t getAccess
+00004c56 t setFMVolume
+00004cee t setPSGVolume
+00004d86 t setMusicTempo.constprop.0
+00004e1c t setLoopNumber.constprop.0
+00004e6a t JOY_update
+00005332 t Z80_upload.constprop.0
+0000540e t Z80_upload.constprop.1
+000054ea t SND_NULL_loadDriver
+000055e2 t VDP_waitVBlank
+0000578c T BMP_doVBlankProcess
+00005796 T VDP_setAutoInc
+000057b0 T memset
+000057ca t XGM2_loadDriver
+0000594a t Z80_loadDriver
+00005a2c t Z80_init
+00005a92 t XGM2_stop
+00005b18 t XGM2_pause
+00005b8a t SYS_doVBlankProcessEx.constprop.0.isra.0
+000060c8 t waitSubTick.part.0
+00006286 t XGM_loadDriver
+00006534 t SND_DPCM2_loadDriver
+000066dc t SND_PCM_loadDriver
+00006884 t SND_PCM4_loadDriver
+00006a34 t SND_DPCM2_startPlay.constprop.0
+00006ab2 T memcpy
+00006ac2 t VDP_loadTileSet
+00006cf8 t updateMapsAddress
+00006d80 t VDP_setWindowAddress
+00006dc4 t VDP_setSpriteListAddress
+00006df0 t VDP_setReg.constprop.0
+00006e0a t JOY_setSupport
+00006e2e t JOY_reset
+00007460 t VDP_setPlaneSize.constprop.0
+00007668 t VDP_resetScreen
+000078dc t VDP_init
+00007a00 t internal_reset
+00007b46 t VDP_setTileMapEx.constprop.0
+00007ccc t PAL_initFade.constprop.0
+00007e86 t main.isra.0
+0000845c T _start_entry
+00008522 T _reset_entry
+0000852a T XGM_doVBlankProcess
+00008590 T MDDBG__SymbolDataPtr
+00008594 t __ErrorHandler
+00008594 t MDDBG__ErrorHandler
+000086bc t MDDBG__Error_IdleLoop
+000086d6 t MDDBG__Error_InitConsole
+000086e2 t MDDBG__Error_MaskStackBoundaries
+0000874c t MDDBG__Error_DrawOffsetLocation
+00008750 t MDDBG__Error_DrawOffsetLocation2
+00008756 t MDDBG__Error_DrawOffsetLocation__inj
+000087e4 t MDDBG__ErrorHandler_SetupVDP
+0000881a t MDDBG__ErrorHandler_VDPConfig
+00008830 t MDDBG__ErrorHandler_VDPConfig_Nametables
+0000886c t MDDBG__ErrorHandler_ConsoleConfig_Initial
+00008870 t MDDBG__ErrorHandler_ConsoleConfig_Shared
+000088a0 t MDDBG__Str_OffsetLocation_24bit
+000088a9 t MDDBG__Str_OffsetLocation_32bit
+000088e4 t MDDBG__Art1bpp_Font
+00008bde t MDDBG__GetSymbolByOffset
+00008ef8 t MDDBG__FormatString
+00008fd2 t MDDBG__Console_Init
+00009010 t MDDBG__Console_Reset
+00009012 t MDDBG__Console_InitShared
+0000905c t MDDBG__Console_SetPosAsXY_Stack
+00009062 t MDDBG__Console_SetPosAsXY
+00009096 t MDDBG__Console_GetPosAsXY
+000090bc t MDDBG__Console_StartNewLine
+000090ea t MDDBG__Console_SetBasePattern
+00009106 t MDDBG__Console_SetWidth
+00009124 t MDDBG__Console_WriteLine_WithPattern
+00009126 t MDDBG__Console_WriteLine
+0000912a t MDDBG__Console_Write
+000091f0 t MDDBG__Console_WriteLine_Formatted
+000091f4 t MDDBG__Console_Write_Formatted
+00009224 t MDDBG__Decomp1bpp
+00009240 t MDDBG__KDebug_WriteLine_Formatted
+00009244 t MDDBG__KDebug_Write_Formatted
+00009298 t MDDBG__KDebug_FlushLine
+000092a2 t MDDBG__KDebug_WriteLine
+000092a6 t MDDBG__KDebug_Write
+000092d4 t MDDBG__ErrorHandler_ConsoleOnly
+000092fa t MDDBG__ErrorHandler_ClearConsole
+00009324 t MDDBG__ErrorHandler_PauseConsole
+0000935e t MDDBG__ErrorHandler_PagesController
+000093be t MDDBG__VSync
+000093f8 t MDDBG__ErrorHandler_ExtraDebuggerList
+00009404 t MDDBG__Debugger_AddressRegisters
+00009450 t MDDBG__Debugger_Backtrace
+000094ee T _Bus_Error
+000094ee t MDDBG__BusError
+00009502 T _Address_Error
+00009502 t MDDBG__AddressError
+0000951a T _Illegal_Instruction
+0000951a t MDDBG__IllegalInstr
+00009538 T _Zero_Divide
+00009538 t MDDBG__ZeroDivide
+0000954e T _Chk_Instruction
+0000954e t MDDBG__ChkInstr
+00009568 T _Trapv_Instruction
+00009568 t MDDBG__TrapvInstr
+00009584 T _Privilege_Violation
+00009584 t MDDBG__PrivilegeViol
+000095a2 T _Trace
+000095a2 t MDDBG__Trace
+000095b2 T _Line_1010_Emulation
+000095b2 t MDDBG__Line1010Emu
+000095ce T _Line_1111_Emulation
+000095ce t MDDBG__Line1111Emu
+000095ea T _Error_Exception
+000095ea t MDDBG__ErrorExcept
+00009700 T smp_null
+00009800 T smp_null_dpcm
+00009880 T __mulsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:442
+00009880 T __mulsi3_internal	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:442
+000098a4 T __CTOR_LIST__
+000098ac T __CTOR_END__
+000098ac T __DTOR_LIST__
+000098b4 T __DTOR_END__
+000098b4 t frame1_tileset
+000098bc t frame1_tilemap
+000098c6 t frame1_palette
+000098cc T frame1
+000098d8 t frame2_tileset
+000098e0 t frame2_tilemap
+000098ea T frame2
+000098f6 t frame3_tileset
+000098fe t frame3_tilemap
+00009908 T frame3
+00009914 t frame4_tileset
+0000991c t frame4_tilemap
+00009926 T frame4
+00009932 t frame5_tileset
+0000993a t frame5_tilemap
+00009944 T frame5
+00009950 t frame6_tileset
+00009958 t frame6_tilemap
+00009962 T frame6
+0000996e t frame7_tileset
+00009976 t frame7_tilemap
+00009980 T frame7
+0000998c t frame8_tileset
+00009994 t frame8_tilemap
+0000999e T frame8
+000099aa t frame9_tileset
+000099b2 t frame9_tilemap
+000099bc T frame9
+000099c8 t frame10_tileset
+000099d0 t frame10_tilemap
+000099da T frame10
+000099e6 t frame11_tileset
+000099ee t frame11_tilemap
+000099f8 T frame11
+00009a04 t frame12_tileset
+00009a0c t frame12_tilemap
+00009a16 T frame12
+00009a22 t frame13_tileset
+00009a2a t frame13_tilemap
+00009a34 T frame13
+00009a40 t frame14_tileset
+00009a48 t frame14_tilemap
+00009a52 T frame14
+00009a5e t frame15_tileset
+00009a66 t frame15_tilemap
+00009a70 T frame15
+00009a7c t frame16_tileset
+00009a84 t frame16_tilemap
+00009a8e T frame16
+00009a9a t frame17_tileset
+00009aa2 t frame17_tilemap
+00009aac t frame17_palette
+00009ab2 T frame17
+00009abe t frame18_tileset
+00009ac6 T frame18
+00009ad2 t frame19_tileset
+00009ada T frame19
+00009ae6 t frame20_tileset
+00009aee T frame20
+00009afa t frame21_tileset
+00009b02 T frame21
+00009b0e t frame22_tileset
+00009b16 T frame22
+00009b22 t frame23_tileset
+00009b2a T frame23
+00009b36 t frame24_tileset
+00009b3e T frame24
+00009b4a t frame25_tileset
+00009b52 T frame25
+00009b5e t frame26_tileset
+00009b66 T frame26
+00009b72 t frame27_tileset
+00009b7a T frame27
+00009b86 t frame28_tileset
+00009b8e T frame28
+00009b9a t frame29_tileset
+00009ba2 T frame29
+00009bae t frame30_tileset
+00009bb6 T frame30
+00009bc2 t frame31_tileset
+00009bca T frame31
+00009bd6 t frame32_tileset
+00009bde T frame32
+00009bea t frame33_tileset
+00009bf2 t frame33_tilemap
+00009bfc t frame33_palette
+00009c02 T frame33
+00009c0e t frame34_tileset
+00009c16 t frame34_tilemap
+00009c20 T frame34
+00009c2c t frame35_tileset
+00009c34 t frame35_tilemap
+00009c3e T frame35
+00009c4a t frame36_tileset
+00009c52 t frame36_tilemap
+00009c5c T frame36
+00009c68 t frame37_tileset
+00009c70 t frame37_tilemap
+00009c7a t frame37_palette
+00009c80 T frame37
+00009c8c t frame38_tileset
+00009c94 t frame38_tilemap
+00009c9e T frame38
+00009caa t frame39_tileset
+00009cb2 t frame39_tilemap
+00009cbc T frame39
+00009cc8 t frame40_tileset
+00009cd0 t frame40_tilemap
+00009cda T frame40
+00009ce6 t frame41_tileset
+00009cee t frame41_tilemap
+00009cf8 t frame41_palette
+00009cfe T frame41
+00009d0a t frame42_tileset
+00009d12 t frame42_tilemap
+00009d1c T frame42
+00009d28 t frame43_tileset
+00009d30 t frame43_tilemap
+00009d3a T frame43
+00009d46 t frame44_tileset
+00009d4e t frame44_tilemap
+00009d58 T frame44
+00009d64 t frame45_tileset
+00009d6c t frame45_tilemap
+00009d76 T frame45
+00009d82 t frame46_tileset
+00009d8a t frame46_tilemap
+00009d94 T frame46
+00009da0 t frame47_tileset
+00009da8 t frame47_tilemap
+00009db2 T frame47
+00009dbe t frame48_tileset
+00009dc6 t frame48_tilemap
+00009dd0 T frame48
+00009ddc t frame49_tileset
+00009de4 t frame49_tilemap
+00009dee t frame49_palette
+00009df4 T frame49
+00009e00 t frame50_tileset
+00009e08 t frame50_tilemap
+00009e12 T frame50
+00009e1e t frame51_tileset
+00009e26 t frame51_tilemap
+00009e30 T frame51
+00009e3c t frame52_tileset
+00009e44 t frame52_tilemap
+00009e4e T frame52
+00009e5a t frame53_tileset
+00009e62 t frame53_tilemap
+00009e6c T frame53
+00009e78 t frame54_tileset
+00009e80 t frame54_tilemap
+00009e8a T frame54
+00009e96 t frame55_tileset
+00009e9e t frame55_tilemap
+00009ea8 T frame55
+00009eb4 t frame56_tileset
+00009ebc t frame56_tilemap
+00009ec6 T frame56
+00009ed2 t frame57_tileset
+00009eda t frame57_tilemap
+00009ee4 T frame57
+00009ef0 t frame58_tileset
+00009ef8 t frame58_tilemap
+00009f02 T frame58
+00009f0e t frame59_tileset
+00009f16 t frame59_tilemap
+00009f20 T frame59
+00009f2c t frame60_tileset
+00009f34 t frame60_tilemap
+00009f3e T frame60
+00009f4a t frame61_tileset
+00009f52 t frame61_tilemap
+00009f5c T frame61
+00009f68 t frame62_tileset
+00009f70 t frame62_tilemap
+00009f7a T frame62
+00009f86 t frame63_tileset
+00009f8e t frame63_tilemap
+00009f98 T frame63
+00009fa4 t frame64_tileset
+00009fac t frame64_tilemap
+00009fb6 T frame64
+00009fc2 t frame65_tileset
+00009fca t frame65_tilemap
+00009fd4 T frame65
+00009fe0 t frame66_tileset
+00009fe8 t frame66_tilemap
+00009ff2 T frame66
+00009ffe t frame67_tileset
+0000a006 t frame67_tilemap
+0000a010 T frame67
+0000a01c t frame68_tileset
+0000a024 t frame68_tilemap
+0000a02e T frame68
+0000a03a t frame69_tileset
+0000a042 t frame69_tilemap
+0000a04c T frame69
+0000a058 t frame70_tileset
+0000a060 t frame70_tilemap
+0000a06a T frame70
+0000a076 t frame71_tileset
+0000a07e t frame71_tilemap
+0000a088 T frame71
+0000a094 t frame72_tileset
+0000a09c t frame72_tilemap
+0000a0a6 T frame72
+0000a0b2 t frame73_tileset
+0000a0ba t frame73_tilemap
+0000a0c4 T frame73
+0000a0d0 t frame74_tileset
+0000a0d8 t frame74_tilemap
+0000a0e2 T frame74
+0000a0ee t frame75_tileset
+0000a0f6 t frame75_tilemap
+0000a100 T frame75
+0000a10c t frame76_tileset
+0000a114 t frame76_tilemap
+0000a11e t frame76_palette
+0000a124 T frame76
+0000a130 t frame77_tileset
+0000a138 t frame77_tilemap
+0000a142 T frame77
+0000a14e t frame78_tileset
+0000a156 t frame78_tilemap
+0000a160 T frame78
+0000a16c t frame79_tileset
+0000a174 t frame79_tilemap
+0000a17e T frame79
+0000a18a t frame80_tileset
+0000a192 T frame80
+0000a19e t frame81_tileset
+0000a1a6 t frame81_tilemap
+0000a1b0 T frame81
+0000a1bc t frame82_tileset
+0000a1c4 T frame82
+0000a1d0 t frame83_tileset
+0000a1d8 t frame83_tilemap
+0000a1e2 T frame83
+0000a1ee t frame84_tileset
+0000a1f6 t frame84_tilemap
+0000a200 T frame84
+0000a20c t frame85_tileset
+0000a214 t frame85_tilemap
+0000a21e t frame85_palette
+0000a224 T frame85
+0000a230 t frame86_tileset
+0000a238 t frame86_tilemap
+0000a242 T frame86
+0000a24e t frame87_tileset
+0000a256 t frame87_tilemap
+0000a260 T frame87
+0000a26c t frame88_tileset
+0000a274 t frame88_tilemap
+0000a27e T frame88
+0000a28a t frame89_tileset
+0000a292 t frame89_tilemap
+0000a29c T frame89
+0000a2a8 t frame90_tileset
+0000a2b0 t frame90_tilemap
+0000a2ba T frame90
+0000a2c6 t frame91_tileset
+0000a2ce T frame91
+0000a2da t frame92_tileset
+0000a2e2 t frame92_tilemap
+0000a2ec T frame92
+0000a2f8 T frame93
+0000a304 t frame94_tileset
+0000a30c T frame94
+0000a318 t frame95_tileset
+0000a320 T frame95
+0000a32c t frame96_tileset
+0000a334 t frame96_tilemap
+0000a33e T frame96
+0000a34a t frame97_tileset
+0000a352 t frame97_tilemap
+0000a35c T frame97
+0000a368 t frame98_tileset
+0000a370 t frame98_tilemap
+0000a37a T frame98
+0000a386 t frame99_tileset
+0000a38e t frame99_tilemap
+0000a398 T frame99
+0000a3a4 t frame100_tileset
+0000a3ac t frame100_tilemap
+0000a3b6 T frame100
+0000a3c2 t frame101_tileset
+0000a3ca t frame101_tilemap
+0000a3d4 T frame101
+0000a3e0 t frame102_tileset
+0000a3e8 t frame102_tilemap
+0000a3f2 T frame102
+0000a3fe t frame103_tileset
+0000a406 t frame103_tilemap
+0000a410 T frame103
+0000a41c t frame104_tileset
+0000a424 t frame104_tilemap
+0000a42e t frame104_palette
+0000a434 T frame104
+0000a440 t frame105_tileset
+0000a448 t frame105_tilemap
+0000a452 T frame105
+0000a45e t frame106_tileset
+0000a466 t frame106_tilemap
+0000a470 t frame106_palette
+0000a476 T frame106
+0000a482 t frame107_tileset
+0000a48a t frame107_tilemap
+0000a494 T frame107
+0000a4a0 t frame108_tileset
+0000a4a8 T frame108
+0000a4b4 t frame109_tileset
+0000a4bc T frame109
+0000a4c8 t frame110_tileset
+0000a4d0 t frame110_tilemap
+0000a4da T frame110
+0000a4e6 t frame111_tileset
+0000a4ee t frame111_tilemap
+0000a4f8 T frame111
+0000a504 t frame112_tileset
+0000a50c t frame112_tilemap
+0000a516 T frame112
+0000a522 t frame113_tileset
+0000a52a t frame113_tilemap
+0000a534 T frame113
+0000a540 t frame114_tileset
+0000a548 t frame114_tilemap
+0000a552 T frame114
+0000a55e t frame115_tileset
+0000a566 t frame115_tilemap
+0000a570 T frame115
+0000a57c t frame116_tileset
+0000a584 t frame116_tilemap
+0000a58e T frame116
+0000a59a t frame117_tileset
+0000a5a2 t frame117_tilemap
+0000a5ac t frame117_palette
+0000a5b2 T frame117
+0000a5be t frame118_tileset
+0000a5c6 t frame118_tilemap
+0000a5d0 t frame118_palette
+0000a5d6 T frame118
+0000a5e2 t frame119_tileset
+0000a5ea t frame119_tilemap
+0000a5f4 T frame119
+0000a600 t frame120_tileset
+0000a608 t frame120_tilemap
+0000a612 T frame120
+0000a61e t frame121_tileset
+0000a626 t frame121_tilemap
+0000a630 T frame121
+0000a63c t frame122_tileset
+0000a644 t frame122_tilemap
+0000a64e T frame122
+0000a65a t frame123_tileset
+0000a662 t frame123_tilemap
+0000a66c T frame123
+0000a678 t frame124_tileset
+0000a680 t frame124_tilemap
+0000a68a T frame124
+0000a696 t frame125_tileset
+0000a69e t frame125_tilemap
+0000a6a8 T frame125
+0000a6b4 t frame126_tileset
+0000a6bc t frame126_tilemap
+0000a6c6 T frame126
+0000a6d2 t frame127_tileset
+0000a6da t frame127_tilemap
+0000a6e4 T frame127
+0000a6f0 t frame128_tileset
+0000a6f8 t frame128_tilemap
+0000a702 T frame128
+0000a70e t frame129_tileset
+0000a716 t frame129_tilemap
+0000a720 T frame129
+0000a72c t frame130_tileset
+0000a734 t frame130_tilemap
+0000a73e T frame130
+0000a74a t frame131_tileset
+0000a752 t frame131_tilemap
+0000a75c T frame131
+0000a768 t frame132_tileset
+0000a770 t frame132_tilemap
+0000a77a T frame132
+0000a786 t frame133_tileset
+0000a78e t frame133_tilemap
+0000a798 T frame133
+0000a7a4 t frame134_tileset
+0000a7ac t frame134_tilemap
+0000a7b6 T frame134
+0000a7c2 t frame135_tileset
+0000a7ca t frame135_tilemap
+0000a7d4 T frame135
+0000a7e0 t frame136_tileset
+0000a7e8 t frame136_tilemap
+0000a7f2 T frame136
+0000a7fe t frame137_tileset
+0000a806 t frame137_tilemap
+0000a810 T frame137
+0000a81c t frame138_tileset
+0000a824 t frame138_tilemap
+0000a82e T frame138
+0000a83a t frame139_tileset
+0000a842 t frame139_tilemap
+0000a84c T frame139
+0000a858 t frame140_tileset
+0000a860 t frame140_tilemap
+0000a86a T frame140
+0000a876 t frame141_tileset
+0000a87e t frame141_tilemap
+0000a888 T frame141
+0000a894 t frame142_tileset
+0000a89c t frame142_tilemap
+0000a8a6 T frame142
+0000a8b2 t frame143_tileset
+0000a8ba t frame143_tilemap
+0000a8c4 T frame143
+0000a8d0 t frame144_tileset
+0000a8d8 t frame144_tilemap
+0000a8e2 T frame144
+0000a8ee t frame145_tileset
+0000a8f6 t frame145_tilemap
+0000a900 T frame145
+0000a90c t frame146_tileset
+0000a914 t frame146_tilemap
+0000a91e T frame146
+0000a92a t frame147_tileset
+0000a932 t frame147_tilemap
+0000a93c T frame147
+0000a948 t frame148_tileset
+0000a950 t frame148_tilemap
+0000a95a T frame148
+0000a966 t frame149_tileset
+0000a96e t frame149_tilemap
+0000a978 T frame149
+0000a984 t frame150_tileset
+0000a98c t frame150_tilemap
+0000a996 T frame150
+0000a9a2 t frame151_tileset
+0000a9aa t frame151_tilemap
+0000a9b4 T frame151
+0000a9c0 t frame152_tileset
+0000a9c8 t frame152_tilemap
+0000a9d2 T frame152
+0000a9de t frame153_tileset
+0000a9e6 t frame153_tilemap
+0000a9f0 t frame153_palette
+0000a9f6 T frame153
+0000aa02 t frame154_tileset
+0000aa0a t frame154_tilemap
+0000aa14 T frame154
+0000aa20 t frame155_tileset
+0000aa28 t frame155_tilemap
+0000aa32 T frame155
+0000aa3e t frame156_tileset
+0000aa46 t frame156_tilemap
+0000aa50 T frame156
+0000aa5c t frame157_tileset
+0000aa64 t frame157_tilemap
+0000aa6e T frame157
+0000aa7a t frame158_tileset
+0000aa82 t frame158_tilemap
+0000aa8c t frame158_palette
+0000aa92 T frame158
+0000aa9e t frame159_tileset
+0000aaa6 t frame159_tilemap
+0000aab0 t frame159_palette
+0000aab6 T frame159
+0000aac2 t frame160_tileset
+0000aaca t frame160_tilemap
+0000aad4 t frame160_palette
+0000aada T frame160
+0000aae6 t frame161_tileset
+0000aaee t frame161_tilemap
+0000aaf8 t frame161_palette
+0000aafe T frame161
+0000ab0a t frame162_tileset
+0000ab12 t frame162_tilemap
+0000ab1c t frame162_palette
+0000ab22 T frame162
+0000ab2e t frame163_tileset
+0000ab36 t frame163_tilemap
+0000ab40 t frame163_palette
+0000ab46 T frame163
+0000ab52 t frame164_tileset
+0000ab5a t frame164_tilemap
+0000ab64 t frame164_palette
+0000ab6a T frame164
+0000ab76 t frame165_tileset
+0000ab7e t frame165_tilemap
+0000ab88 t frame165_palette
+0000ab8e T frame165
+0000ab9a t frame166_tileset
+0000aba2 t frame166_tilemap
+0000abac t frame166_palette
+0000abb2 T frame166
+0000abbe t frame167_tileset
+0000abc6 t frame167_tilemap
+0000abd0 t frame167_palette
+0000abd6 T frame167
+0000abe2 t frame168_tileset
+0000abea t frame168_tilemap
+0000abf4 t frame168_palette
+0000abfa T frame168
+0000ac06 t frame169_tileset
+0000ac0e t frame169_tilemap
+0000ac18 t frame169_palette
+0000ac1e T frame169
+0000ac2a t frame170_tileset
+0000ac32 t frame170_tilemap
+0000ac3c T frame170
+0000ac48 t frame171_tileset
+0000ac50 t frame171_tilemap
+0000ac5a T frame171
+0000ac66 t frame172_tileset
+0000ac6e t frame172_tilemap
+0000ac78 T frame172
+0000ac84 t frame173_tileset
+0000ac8c t frame173_tilemap
+0000ac96 t frame173_palette
+0000ac9c T frame173
+0000aca8 t frame174_tileset
+0000acb0 t frame174_tilemap
+0000acba T frame174
+0000acc6 t frame175_tileset
+0000acce t frame175_tilemap
+0000acd8 T frame175
+0000ace4 t frame176_tileset
+0000acec t frame176_tilemap
+0000acf6 T frame176
+0000ad02 t frame177_tileset
+0000ad0a t frame177_tilemap
+0000ad14 T frame177
+0000ad20 T frame178
+0000ad2c T intro_pal
+0000adb8 t introPar
+0000af1c t introImpar
+0000b080 t palette_black_all
+0000b100 t xlt.1
+0000b108 t xlt_all.0
+0000b118 t tab_vol
+0000c118 t psgVolTable
+0000c17c t fmVolTable
+0000c1e0 t palette_blue
+0000c200 t palette_green
+0000c220 t palette_red
+0000c240 t palette_grey
+0000c260 t sgdk_logo_palette
+0000c266 T sgdk_logo
+0000c274 T font_default
+0000c27c T font_pal_default
+0000c282 T drv_null
+0000c2bc T drv_xgm
+0000d9bc T drv_dpcm2
+0000e7bc T drv_pcm
+0000f2ec T drv_pcm4
+0000fd5a T drv_xgm2
+00011d5c T __INIT_SECTION__
+00011d5e T __FINI_SECTION__
+00011d60 T _etext
+00011d60 t frame1_palette_data
+00011de0 t frame17_palette_data
+00011e60 t frame33_palette_data
+00011ee0 t frame37_palette_data
+00011f60 t frame41_palette_data
+00011fe0 t frame49_palette_data
+00012060 t frame76_palette_data
+000120e0 t frame85_palette_data
+00012160 t frame104_palette_data
+000121e0 t frame106_palette_data
+00012260 t frame117_palette_data
+000122e0 t frame118_palette_data
+00012360 t frame153_palette_data
+000123e0 t frame158_palette_data
+00012460 t frame159_palette_data
+000124e0 t frame160_palette_data
+00012560 t frame161_palette_data
+000125e0 t frame162_palette_data
+00012660 t frame163_palette_data
+000126e0 t frame164_palette_data
+00012760 t frame165_palette_data
+000127e0 t frame166_palette_data
+00012860 t frame167_palette_data
+000128e0 t frame168_palette_data
+00012960 t frame169_palette_data
+000129e0 t frame173_palette_data
+00012a60 t intro_pal_data
+00012b00 T snd_intro
+0004f000 A snd_intro_size
+00061b00 t sgdk_logo_palette_data
+00061b20 t font_pal_default_data
+00061b40 T stop_xgm
+00061bec t font_default_data
+00061e4e t sgdk_logo_data
+00062288 t frame1_tilemap_data
+00062530 t frame2_tilemap_data
+000626a2 t frame3_tilemap_data
+0006277a t frame4_tilemap_data
+00062866 t frame5_tilemap_data
+00062932 t frame6_tilemap_data
+00062a0a t frame7_tilemap_data
+00062ae0 t frame8_tilemap_data
+00062bae t frame9_tilemap_data
+00062c7a t frame10_tilemap_data
+00062d4c t frame11_tilemap_data
+00062e1e t frame12_tilemap_data
+00062ee8 t frame13_tilemap_data
+00062fba t frame14_tilemap_data
+0006308a t frame15_tilemap_data
+00063152 t frame16_tilemap_data
+0006321c t frame17_tilemap_data
+000632d2 t frame33_tilemap_data
+0006339e t frame34_tilemap_data
+00063468 t frame35_tilemap_data
+00063526 t frame36_tilemap_data
+000635e4 t frame37_tilemap_data
+00063698 t frame38_tilemap_data
+00063746 t frame39_tilemap_data
+000637fa t frame40_tilemap_data
+000638b0 t frame41_tilemap_data
+000639bc t frame42_tilemap_data
+00063acc t frame43_tilemap_data
+00063bd6 t frame44_tilemap_data
+00063cba t frame45_tilemap_data
+00063d8a t frame46_tilemap_data
+00063e5e t frame47_tilemap_data
+00063f2e t frame48_tilemap_data
+00063ff4 t frame49_tilemap_data
+000640ba t frame50_tilemap_data
+00064194 t frame51_tilemap_data
+00064264 t frame52_tilemap_data
+0006437c t frame53_tilemap_data
+00064490 t frame54_tilemap_data
+0006459a t frame55_tilemap_data
+000646a2 t frame56_tilemap_data
+0006478a t frame57_tilemap_data
+00064868 t frame58_tilemap_data
+0006496a t frame59_tilemap_data
+00064a3c t frame60_tilemap_data
+00064b00 t frame61_tilemap_data
+00064c12 t frame62_tilemap_data
+00064cf8 t frame63_tilemap_data
+00064df0 t frame64_tilemap_data
+00064ecc t frame65_tilemap_data
+00064f90 t frame66_tilemap_data
+00065078 t frame67_tilemap_data
+00065164 t frame68_tilemap_data
+0006522c t frame69_tilemap_data
+0006530a t frame70_tilemap_data
+000653da t frame71_tilemap_data
+000654bc t frame72_tilemap_data
+000655b8 t frame73_tilemap_data
+000656bc t frame74_tilemap_data
+00065778 t frame75_tilemap_data
+0006583e t frame76_tilemap_data
+00065916 t frame77_tilemap_data
+00065a0c t frame78_tilemap_data
+00065b02 t frame79_tilemap_data
+00065bfc t frame81_tilemap_data
+00065cf2 t frame83_tilemap_data
+00065dea t frame84_tilemap_data
+00065ee2 t frame85_tilemap_data
+00065fa4 t frame86_tilemap_data
+00066068 t frame87_tilemap_data
+0006612a t frame88_tilemap_data
+000661e6 t frame89_tilemap_data
+000662a6 t frame90_tilemap_data
+00066360 t frame92_tilemap_data
+00066410 t frame96_tilemap_data
+000664c2 t frame97_tilemap_data
+000665a6 t frame98_tilemap_data
+00066684 t frame99_tilemap_data
+0006679c t frame100_tilemap_data
+000668d2 t frame101_tilemap_data
+000669e6 t frame102_tilemap_data
+00066aa0 t frame103_tilemap_data
+00066b5a t frame104_tilemap_data
+00066c34 t frame105_tilemap_data
+00066d22 t frame106_tilemap_data
+00066e22 t frame107_tilemap_data
+00066f30 t frame110_tilemap_data
+00067038 t frame111_tilemap_data
+00067140 t frame112_tilemap_data
+0006723a t frame113_tilemap_data
+000672f8 t frame114_tilemap_data
+000673a8 t frame115_tilemap_data
+000674c8 t frame116_tilemap_data
+00067586 t frame117_tilemap_data
+00067638 t frame118_tilemap_data
+00067646 t frame119_tilemap_data
+0006771c t frame120_tilemap_data
+000677e8 t frame121_tilemap_data
+000678ac t frame122_tilemap_data
+00067978 t frame123_tilemap_data
+00067a5e t frame124_tilemap_data
+00067b3e t frame125_tilemap_data
+00067c24 t frame126_tilemap_data
+00067d02 t frame127_tilemap_data
+00067e08 t frame128_tilemap_data
+00067f00 t frame129_tilemap_data
+00067fd4 t frame130_tilemap_data
+000680bc t frame131_tilemap_data
+00068194 t frame132_tilemap_data
+0006826e t frame133_tilemap_data
+00068334 t frame134_tilemap_data
+00068416 t frame135_tilemap_data
+000684dc t frame136_tilemap_data
+000685b8 t frame137_tilemap_data
+000686ba t frame138_tilemap_data
+0006879a t frame139_tilemap_data
+000688b6 t frame140_tilemap_data
+000689c6 t frame141_tilemap_data
+00068b48 t frame142_tilemap_data
+00068cb2 t frame143_tilemap_data
+00068e1c t frame144_tilemap_data
+00068f8c t frame145_tilemap_data
+000690dc t frame146_tilemap_data
+00069228 t frame147_tilemap_data
+00069320 t frame148_tilemap_data
+000693f4 t frame149_tilemap_data
+000694c2 t frame150_tilemap_data
+00069598 t frame151_tilemap_data
+00069674 t frame152_tilemap_data
+0006976e t frame153_tilemap_data
+0006985a t frame154_tilemap_data
+0006997c t frame155_tilemap_data
+00069b0a t frame156_tilemap_data
+00069ca4 t frame157_tilemap_data
+00069e1e t frame158_tilemap_data
+00069f28 t frame159_tilemap_data
+00069fdc t frame160_tilemap_data
+0006a098 t frame161_tilemap_data
+0006a14a t frame162_tilemap_data
+0006a1fc t frame163_tilemap_data
+0006a2be t frame164_tilemap_data
+0006a550 t frame165_tilemap_data
+0006a6d2 t frame166_tilemap_data
+0006a830 t frame167_tilemap_data
+0006a99a t frame168_tilemap_data
+0006ab72 t frame169_tilemap_data
+0006ad2c t frame170_tilemap_data
+0006ae90 t frame171_tilemap_data
+0006b014 t frame172_tilemap_data
+0006b186 t frame173_tilemap_data
+0006b2da t frame174_tilemap_data
+0006b410 t frame175_tilemap_data
+0006b564 t frame176_tilemap_data
+0006b6da t frame177_tilemap_data
+0006b830 t frame1_tileset_data
+0006d27e t frame2_tileset_data
+0006f2a4 t frame3_tileset_data
+0007148a t frame4_tileset_data
+000734ba t frame5_tileset_data
+0007555a t frame6_tileset_data
+0007772c t frame7_tileset_data
+000798a8 t frame8_tileset_data
+0007bb58 t frame9_tileset_data
+0007dd96 t frame10_tileset_data
+0007ff5c t frame11_tileset_data
+000820a4 t frame12_tileset_data
+00084236 t frame13_tileset_data
+0008634a t frame14_tileset_data
+000881b2 t frame15_tileset_data
+00089ff2 t frame16_tileset_data
+0008bd0a t frame17_tileset_data
+0008e972 t frame18_tileset_data
+00091132 t frame19_tileset_data
+00093bf0 t frame20_tileset_data
+000966de t frame21_tileset_data
+00099022 t frame22_tileset_data
+0009b55a t frame23_tileset_data
+0009df3c t frame24_tileset_data
+000a041e t frame25_tileset_data
+000a2880 t frame26_tileset_data
+000a4ff6 t frame27_tileset_data
+000a732e t frame28_tileset_data
+000a92e4 t frame29_tileset_data
+000ab94e t frame30_tileset_data
+000ae414 t frame31_tileset_data
+000b0f3a t frame32_tileset_data
+000b3604 t frame33_tileset_data
+000b5874 t frame34_tileset_data
+000b7a92 t frame35_tileset_data
+000ba1ba t frame36_tileset_data
+000bc5c4 t frame37_tileset_data
+000bf0e8 t frame38_tileset_data
+000c1d3a t frame39_tileset_data
+000c4aa8 t frame40_tileset_data
+000c785c t frame41_tileset_data
+000c92be t frame42_tileset_data
+000cae0a t frame43_tileset_data
+000ccea2 t frame44_tileset_data
+000cf246 t frame45_tileset_data
+000d1774 t frame46_tileset_data
+000d3d5c t frame47_tileset_data
+000d612e t frame48_tileset_data
+000d8840 t frame49_tileset_data
+000da7e4 t frame50_tileset_data
+000dc532 t frame51_tileset_data
+000de170 t frame52_tileset_data
+000df9ee t frame53_tileset_data
+000e131a t frame54_tileset_data
+000e2c4e t frame55_tileset_data
+000e484e t frame56_tileset_data
+000e6794 t frame57_tileset_data
+000e8bbc t frame58_tileset_data
+000eaddc t frame59_tileset_data
+000ecc0e t frame60_tileset_data
+000edb8c t frame61_tileset_data
+000ef73a t frame62_tileset_data
+000f1476 t frame63_tileset_data
+000f2f14 t frame64_tileset_data
+000f53ea t frame65_tileset_data
+000f7a06 t frame66_tileset_data
+000f9b82 t frame67_tileset_data
+000fba94 t frame68_tileset_data
+000fd9bc t frame69_tileset_data
+000ff83c t frame70_tileset_data
+001014f6 t frame71_tileset_data
+0010354e t frame72_tileset_data
+00104e3a t frame73_tileset_data
+00106680 t frame74_tileset_data
+00109174 t frame75_tileset_data
+0010bb74 t frame76_tileset_data
+0010bf6c t frame77_tileset_data
+0010e042 t frame78_tileset_data
+001100b0 t frame79_tileset_data
+00111712 t frame80_tileset_data
+00112bfa t frame81_tileset_data
+001141ac t frame82_tileset_data
+001156cc t frame83_tileset_data
+00116ab8 t frame84_tileset_data
+001185e4 t frame85_tileset_data
+0011b058 t frame86_tileset_data
+0011d822 t frame87_tileset_data
+0011f7a8 t frame88_tileset_data
+00121c5a t frame89_tileset_data
+0012416a t frame90_tileset_data
+00126c66 t frame91_tileset_data
+00129ac6 t frame92_tileset_data
+0012c93e t frame94_tileset_data
+0012f0e6 t frame95_tileset_data
+001311de t frame96_tileset_data
+00133fdc t frame97_tileset_data
+00135d38 t frame98_tileset_data
+00137bd8 t frame99_tileset_data
+0013987c t frame100_tileset_data
+0013b8e8 t frame101_tileset_data
+0013d722 t frame102_tileset_data
+00140380 t frame103_tileset_data
+00143020 t frame104_tileset_data
+0014519e t frame105_tileset_data
+00146e14 t frame106_tileset_data
+0014894c t frame107_tileset_data
+0014a228 t frame108_tileset_data
+0014b26e t frame109_tileset_data
+0014c212 t frame110_tileset_data
+0014d48c t frame111_tileset_data
+0014e536 t frame112_tileset_data
+0014f5e8 t frame113_tileset_data
+00152298 t frame114_tileset_data
+00155266 t frame115_tileset_data
+001573c8 t frame116_tileset_data
+00159744 t frame117_tileset_data
+0015bab6 t frame118_tileset_data
+0015bad6 t frame119_tileset_data
+0015c5e4 t frame120_tileset_data
+0015e500 t frame121_tileset_data
+00160780 t frame122_tileset_data
+00162942 t frame123_tileset_data
+00164af6 t frame124_tileset_data
+00166d0a t frame125_tileset_data
+00168e58 t frame126_tileset_data
+0016ae88 t frame127_tileset_data
+0016cbde t frame128_tileset_data
+0016ea36 t frame129_tileset_data
+0017084a t frame130_tileset_data
+00172942 t frame131_tileset_data
+001748a2 t frame132_tileset_data
+001766b2 t frame133_tileset_data
+00178924 t frame134_tileset_data
+0017ab56 t frame135_tileset_data
+0017ce96 t frame136_tileset_data
+0017f0b0 t frame137_tileset_data
+00180d06 t frame138_tileset_data
+0018277c t frame139_tileset_data
+00183f04 t frame140_tileset_data
+001852be t frame141_tileset_data
+00186766 t frame142_tileset_data
+00187c84 t frame143_tileset_data
+00188fea t frame144_tileset_data
+0018a3d6 t frame145_tileset_data
+0018b078 t frame146_tileset_data
+0018c598 t frame147_tileset_data
+0018e178 t frame148_tileset_data
+0019051e t frame149_tileset_data
+00192a3a t frame150_tileset_data
+001951ec t frame151_tileset_data
+00197a1e t frame152_tileset_data
+001991f8 t frame153_tileset_data
+0019a106 t frame154_tileset_data
+0019b4dc t frame155_tileset_data
+0019c73a t frame156_tileset_data
+0019e0e8 t frame157_tileset_data
+0019fd82 t frame158_tileset_data
+001a1d4e t frame159_tileset_data
+001a4a7e t frame160_tileset_data
+001a7982 t frame161_tileset_data
+001aabe2 t frame162_tileset_data
+001ade62 t frame163_tileset_data
+001b0dc4 t frame164_tileset_data
+001b29ac t frame165_tileset_data
+001b43a0 t frame166_tileset_data
+001b5afc t frame167_tileset_data
+001b74ba t frame168_tileset_data
+001b94e6 t frame169_tileset_data
+001b9ed2 t frame170_tileset_data
+001bbbc0 t frame171_tileset_data
+001bd950 t frame172_tileset_data
+001bf9c4 t frame173_tileset_data
+001c14de t frame174_tileset_data
+001c3a26 t frame175_tileset_data
+001c58f8 t frame176_tileset_data
+001c7734 t frame177_tileset_data
+001c7f2c A _stext
+e0ff0000 D task_sr
+e0ff0002 D task_pc
+e0ff0006 D task_regs
+e0ff0042 D task_lock
+e0ff0044 D _edata
+e0ff0044 B _start
+e0ff0044 B bmp_buffer_write
+e0ff0048 B intLevelSave
+e0ff004a B intTrace
+e0ff004c B VBlankProcess
+e0ff004e B eintCB
+e0ff0052 B hintCaller
+e0ff0058 B vintCB
+e0ff005c B intCB
+e0ff0060 B vtimer
+e0ff0064 B dmaQueues
+e0ff0068 b state
+e0ff006a b palette_full
+e0ff00ea b index
+e0ff00ec b vscroll_update
+e0ff00ed b hscroll_update
+e0ff00ee b fadePSGVol
+e0ff00f0 b fadeFMVol
+e0ff00f2 b fadeCount
+e0ff00f4 b fadeEndPal
+e0ff0174 b vram
+e0ff0180 b randomSeedSet
+e0ff0181 b retry
+e0ff0182 b phase.lto_priv.1
+e0ff0183 b gun
+e0ff0184 b extSet
+e0ff0186 b joyAxisY
+e0ff0196 b joyAxisX
+e0ff01a6 b joyState
+e0ff01b6 b joyType
+e0ff01be b portSupport
+e0ff01c0 b portType
+e0ff01c2 b gport
+e0ff01c4 b xgm2WaitTab
+e0ff01cc b xgm2IdleTab
+e0ff01d4 b xgmTempoCnt
+e0ff01d8 b xgmWaitTab
+e0ff0218 b xgmIdleTab
+e0ff0258 b xgmTempoDef
+e0ff025a b xgmTempo
+e0ff025c b busProtectSignalAddress
+e0ff025e b driverFlags
+e0ff0260 b currentDriver
+e0ff0262 b lastVTimer.0
+e0ff0264 b allocStack
+e0ff03a4 b vdpSpriteCache
+e0ff06a4 b text_plan
+e0ff06a8 b text_basetile
+e0ff06aa b maps_addr
+e0ff06ac b lastVCnt
+e0ff06ae b windowWidthSft
+e0ff06b0 b planeHeightSft
+e0ff06b2 b planeWidthSft
+e0ff06b4 b windowWidth
+e0ff06b6 b planeHeight
+e0ff06b8 b planeWidth
+e0ff06ba b hscrl_addr
+e0ff06bc b slist_addr
+e0ff06be b bgb_addr
+e0ff06c0 b bga_addr
+e0ff06c2 b window_addr
+e0ff06c4 b screenHeight
+e0ff06c6 b lastTick
+e0ff06ca b joyEventCB
+e0ff06ce b spriteVramSize
+e0ff06d0 b spritesPool
+e0ff06d4 b cpuFrameLoad
+e0ff06d6 b frameLoadIndex
+e0ff06d8 b frameLoads
+e0ff06e8 b flags
+e0ff06ea b disableIntStack
+e0ff06ec b vblankCB
+e0ff06f0 b fadeInd
+e0ff06f2 b fadeCurrentPal
+e0ff0772 b fadeSB
+e0ff07f2 b fadeSG
+e0ff0872 b fadeSR
+e0ff08f2 b fadeB
+e0ff0972 b fadeG
+e0ff09f2 b fadeR
+e0ff0a72 b fadeSize
+e0ff0a74 b fadeCounter
+e0ff0a76 b heap
+e0ff0a7a b free.lto_priv.0
+e0ff0a80 b regValues
+e0ff0a94 b flag
+e0ff0a96 b maxTransferPerFrame
+e0ff0a98 b queueSize
+e0ff0a9a b nextDataBuffer
+e0ff0a9e b queueTransferSize
+e0ff0aa0 b queueIndexLimit
+e0ff0aa2 b queueIndex
+e0ff0aa4 b dmaDataBuffer
+e0ff0aa8 b dataBufferSize
+e0ff0aaa b phase.lto_priv.0
+e0ff0aac B _bend
 e1000000 A __stack
