@@ -6,6 +6,7 @@
 // Definições reais (uma vez só)
 u32 frames = 0;
 u16 palette_full[64];
+u16 index;
 
 // Arrays de ponteiros para os frames pares e ímpares
 const Image* introPar[] = {
@@ -41,10 +42,16 @@ const Image* introImpar[] = {
 // Função de animação
 void AnimateMovie()
 {
-    u16 index = 0;
+
 
     while (index < NUMBER_OF_INTRO_FRAMES)
     {
+        if (index == 0)
+        {
+            //SND_PCM_startPlay(snd_intro, sizeof(snd_intro), SOUND_PCM_RATE_22050, 3, 0);
+            SND_DPCM2_startPlay(snd_intro, sizeof(snd_intro), SOUND_PCM_CH1, 0);
+
+        }
         PAL_setPalette(PAL0, introImpar[index]->palette->data, CPU);
         VDP_drawImageEx(BG_A, introImpar[index],
                         TILE_ATTR_FULL(PAL0, FALSE, FALSE, FALSE, 408),
@@ -87,11 +94,14 @@ int main(bool hardReset){
 	//inicializacao de sprites
 	VDP_setBackgroundColor(0); //Range 0-63 //4 Paletas de 16 cores = 64 cores
 
-
+    index = 0;
 while (TRUE) // MAIN LOOP
 {
 
+
+
             AnimateMovie();  // Animação da introdução
+
 
 
 }
