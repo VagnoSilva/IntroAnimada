@@ -176,3 +176,5 @@ IMAGE frame175 "video/0175.png" FAST
 IMAGE frame176 "video/0176.png" FAST
 IMAGE frame177 "video/0177.png" FAST
 IMAGE frame178 "video/0178.png" FAST
+
+PALETTE  intro_pal "video/bgb_intro_pal.png"

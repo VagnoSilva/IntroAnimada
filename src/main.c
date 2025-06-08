@@ -1,22 +1,13 @@
-#ifndef ANIM_INTRO_H
-#define ANIM_INTRO_H
 
 #include <genesis.h>
 #include "movie_res.h"
-#include "sound.h"
-
-// Declaração das variáveis globais que estão no main.c
-extern u8 room;    // Variável para controlar o estado do jogo ou fase atual
-extern u32 frames; // Contador de quadros
+#include "sound_res.h"
+#define NUMBER_OF_INTRO_FRAMES 89
+// Defini��es reais (uma vez s�)
+u32 frames = 0;
 u16 palette_full[64];
 
-// Declaração da função CLEAR_VDP que está definida no main.c
-extern void CLEAR_VDP(void); // A função CLEAR_VDP deve estar em main.c
-
-// Número de quadros
-#define NUMBER_OF_INTRO_FRAMES 89
-
-// Declaração das imagens para os quadros pares e ímpares
+// Arrays de ponteiros para os frames pares e �mpares
 const Image* introPar[] = {
     &frame2, &frame4, &frame6, &frame8, &frame10, &frame12, &frame14, &frame16,
     &frame18, &frame20, &frame22, &frame24, &frame26, &frame28, &frame30, &frame32,
@@ -47,55 +38,66 @@ const Image* introImpar[] = {
     &frame177
 };
 
-
-
-// Função para animar o filme
-static void AnimateMovie()
+// Fun��o de anima��o
+void AnimateMovie()
 {
-    u16 index = 0;  // Inicialização do índice de quadros
+    u16 index = 0;
 
     while (index < NUMBER_OF_INTRO_FRAMES)
     {
-        // Verifica se o botão Start foi pressionado para interromper a animação
-        if (JOY_readJoypad(JOY_1) & BUTTON_START)
-        {
-            CLEAR_VDP();  // Limpa a tela
-            room = 8;     // Muda para o título ou próxima fase
-            frames = 0;   // Reinicia o contador de quadros
-            break;        // Interrompe a animação
-        }
-
-        // Carrega e desenha a imagem ímpar no plano A
-        PAL_setPalette(PAL0, introImpar[index]->palette->data, CPU);  // Define a paleta
-        VDP_drawImageEx(BG_A, introImpar[index], TILE_ATTR_FULL(PAL0, FALSE, FALSE, FALSE, 408), 7, 5, FALSE, CPU); // Desenha no plano A
-
-        // Limpa o plano B
+        PAL_setPalette(PAL0, introImpar[index]->palette->data, CPU);
+        VDP_drawImageEx(BG_A, introImpar[index],
+                        TILE_ATTR_FULL(PAL0, FALSE, FALSE, FALSE, 408),
+                        7, 5, FALSE, CPU);
         VDP_clearPlane(BG_B, TRUE);
 
-        // Atraso antes de desenhar o próximo quadro
-        waitMs(100);
+        for (u8 i = 0; i < 6; i++) SYS_doVBlankProcess();
 
-        // Carrega e desenha a imagem par no plano B
-        PAL_setPalette(PAL0, introPar[index]->palette->data, CPU);  // Define a paleta
-        VDP_drawImageEx(BG_B, introPar[index], TILE_ATTR_FULL(PAL0, FALSE, FALSE, FALSE, 1), 7, 5, FALSE, CPU); // Desenha no plano B
-
-        // Limpa o plano A
+        PAL_setPalette(PAL0, introPar[index]->palette->data, CPU);
+        VDP_drawImageEx(BG_B, introPar[index],
+                        TILE_ATTR_FULL(PAL0, FALSE, FALSE, FALSE, 1),
+                        7, 5, FALSE, CPU);
         VDP_clearPlane(BG_A, TRUE);
 
-        // Atraso antes de avançar para o próximo quadro
-       waitMs(100);
+        for (u8 i = 0; i < 6; i++) SYS_doVBlankProcess();
 
-        // Avança o índice para o próximo quadro
         index++;
-
-        // Se o índice atingir o limite, reinicia a animação
-        if (index >= NUMBER_OF_INTRO_FRAMES)
-        {
-            memcpy(&palette_full[16], plane_pal.data, 16 * 2); // Copia a paleta
-            PAL_fadeOut(0, 31, 30, FALSE); // Inicia a transição de desvanecimento
-            break;
-        }
     }
+
+    memcpy(&palette_full[16], intro_pal.data, 16 * 2);
+    PAL_fadeOut(0, 31, 30, FALSE);
 }
 
-#endif // ANIM_INTRO_H
+
+
+
+// Fun��o principal do jogo, ode as demais fun��es s�o carregadas
+int main(bool hardReset){
+    //inicializacao da VDP (Video Display Processor)
+	SYS_disableInts();
+	 VDP_init();
+
+	 VDP_setPlaneSize(64, 64, TRUE);
+	 VDP_setScreenWidth320();
+	 VDP_setScreenHeight224();
+	 VDP_setScrollingMode(HSCROLL_PLANE, VSCROLL_PLANE);
+	SYS_enableInts();
+
+
+	//inicializacao de sprites
+	VDP_setBackgroundColor(0); //Range 0-63 //4 Paletas de 16 cores = 64 cores
+
+
+while (TRUE) // MAIN LOOP
+{
+
+            AnimateMovie();  // Anima��o da introdu��o
+
+
+}
+
+    return 0;
+}
+
+
+//EOF; End of File

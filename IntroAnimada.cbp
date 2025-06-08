@@ -34,6 +34,11 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="src/anim_intro.h" />
+		<Unit filename="src/boot/rom_head.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/boot/sega.s" />
 		<Unit filename="src/main.c">
 			<Option compilerVar="CC" />
 		</Unit>

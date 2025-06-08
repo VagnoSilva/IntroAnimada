@@ -1,3 +1,5 @@
+#include <genesis.h>
+
 #ifndef _RES_MOVIE_RES_H_
 #define _RES_MOVIE_RES_H_
 
@@ -179,5 +181,6 @@ extern const Image frame175;
 extern const Image frame176;
 extern const Image frame177;
 extern const Image frame178;
+extern const Palette intro_pal;
 
 #endif // _RES_MOVIE_RES_H_
